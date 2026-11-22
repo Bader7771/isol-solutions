@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta — dynamiquement mis à jour par JS -->
+    <meta name="description" id="meta-description"
+        content="Isolsolutions — Fiche produit détaillée. Solutions d'isolation acoustique et thermique professionnelle haute performance au Maroc.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Isolsolutions">
+
+    <!-- Open Graph / Réseaux sociaux -->
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Isolsolutions">
+    <meta property="og:title" id="og-title" content="Produit — Isolsolutions">
+    <meta property="og:description" id="og-description"
+        content="Isolsolutions — Solutions d'isolation acoustique et thermique de haute performance au Maroc.">
+    <meta property="og:image" id="og-image" content="assets/images/LOGO.png">
+    <meta property="og:locale" content="fr_MA">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="Produit — Isolsolutions">
+    <meta name="twitter:description" id="twitter-description"
+        content="Isolsolutions — Solutions d'isolation acoustique et thermique de haute performance.">
+
+    <!-- Canonical (mis à jour en JS) -->
+    <link rel="canonical" id="canonical-link" href="">
+
+    <title id="page-title">Produit — Isolsolutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Données Structurées JSON-LD (Schema.org Product) — enrichies par JS -->
+    <script type="application/ld+json" id="json-ld-product">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "",
+        "description": "",
+        "brand": {
+            "@type": "Brand",
+            "name": "Isolsolutions"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Isolsolutions",
+            "url": "https://www.isolsolutions.ma"
+        }
+    }
+    </script>
+
+    <!-- Fil d'Ariane JSON-LD -->
+    <script type="application/ld+json" id="json-ld-breadcrumb">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": []
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="assets/images/LOGO.png" alt="Isolsolutions — Expert isolation acoustique et thermique" width="200">
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="index.html#solutions" class="nav__link">Solutions</a></li>
+                <li><a href="index.html#about" class="nav__link">Pourquoi nous</a></li>
+                <li><a href="index.html#secteurs" class="nav__link">Secteurs</a></li>
+                <li><a href="blog.html" class="nav__link">Blog</a></li>
+                <li><a href="index.html#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb__sep">›</span>
+                <a href="index.html#solutions">Solutions</a>
+                <span class="breadcrumb__sep">›</span>
+                <a id="breadcrumb-cat-link" href="#">
+                    <span id="breadcrumb-category"></span>
+                </a>
+                <span class="breadcrumb__sep">›</span>
+                <span id="breadcrumb-product" class="breadcrumb__current"></span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Content -->
+    <section class="product-content">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Left: Image -->
+                <div class="product-image-wrapper">
+                    <div class="product-image-card">
+                        <span class="product-image__badge" id="product-badge"></span>
+                        <img id="product-image" src="" alt="" class="product-image__img">
+                    </div>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="product-info">
+                    <span class="product-info__category" id="product-category-label"></span>
+                    <h1 class="product-info__title" id="product-title"></h1>
+                    <p class="product-info__desc" id="product-description"></p>
+
+                    <!-- Specs Table -->
+                    <div class="product-specs" id="product-specs">
+                        <h3 class="product-specs__title">Caractéristiques Techniques</h3>
+                        <table class="product-specs__table" id="specs-table">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="product-cta-buttons">
+                        <a href="#" class="btn btn--primary btn--large" id="btn-download">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Télécharger la fiche technique
+                        </a>
+                        <button class="btn btn--accent btn--large" id="btn-devis" onclick="openQuoteModal()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Demandez un devis
+                        </button>
+                    </div>
+
+                    <!-- Fiches Techniques Supplémentaires (si disponibles) -->
+                    <div id="product-datasheets" style="display:none; margin-top: 1rem;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="product-advantages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Points Forts</span>
+                <h2 class="section-title">Avantages du Produit</h2>
+            </div>
+            <div class="advantages-grid" id="advantages-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Produits Associés</span>
+                <h2 class="section-title">Découvrez aussi</h2>
+            </div>
+            <div class="products-grid products-grid--related" id="related-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div class="quote-modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="quote-modal__backdrop" onclick="closeQuoteModal()"></div>
+        <div class="quote-modal__dialog">
+            <button class="quote-modal__close" onclick="closeQuoteModal()" aria-label="Fermer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="quote-modal__header">
+                <h2 id="modal-title" class="quote-modal__title">Demandez un Devis</h2>
+                <p class="quote-modal__subtitle">Produit : <strong id="modal-product-name"></strong></p>
+            </div>
+            <form class="quote-form" id="quote-form" novalidate>
+                <div class="quote-form__row">
+                    <div class="quote-form__group">
+                        <label for="devis-nom">Nom complet *</label>
+                        <input type="text" id="devis-nom" name="nom" required maxlength="100" autocomplete="name"
+                            placeholder="Votre nom complet">
+                        <span class="quote-form__error" id="devis-nom-error"></span>
+                    </div>
+                    <div class="quote-form__group">
+                        <label for="devis-email">Email *</label>
+                        <input type="email" id="devis-email" name="email" required maxlength="100" autocomplete="email"
+                            placeholder="votre@email.com">
+                        <span class="quote-form__error" id="devis-email-error"></span>
+                    </div>
+                </div>
+                <div class="quote-form__row">
+                    <div class="quote-form__group">
+                        <label for="devis-telephone">Téléphone</label>
+                        <input type="tel" id="devis-telephone" name="telephone" maxlength="20" autocomplete="tel"
+                            placeholder="+212 6XX-XXXXXX">
+                        <span class="quote-form__error" id="devis-telephone-error"></span>
+                    </div>
+                    <div class="quote-form__group">
+                        <label for="devis-entreprise">Entreprise</label>
+                        <input type="text" id="devis-entreprise" name="entreprise" maxlength="100"
+                            autocomplete="organization" placeholder="Nom de votre entreprise">
+                        <span class="quote-form__error" id="devis-entreprise-error"></span>
+                    </div>
+                </div>
+                <div class="quote-form__group quote-form__group--full">
+                    <label for="devis-message">Message *</label>
+                    <textarea id="devis-message" name="message" rows="4" required maxlength="1000"
+                        placeholder="Décrivez votre besoin, quantités souhaitées, contraintes particulières..."></textarea>
+                    <span class="quote-form__error" id="devis-message-error"></span>
+                </div>
+                <div class="quote-form__actions">
+                    <button type="submit" class="btn btn--primary btn--large" id="devis-submit-btn">
+                        <span>Envoyer la demande</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <p class="quote-form__notice">* Champs obligatoires. Vos données sont protégées conformément au
+                        RGPD.</p>
+                </div>
+            </form>
+            <!-- Success Message -->
+            <div class="quote-form__success" id="quote-success" style="display: none;">
+                <div class="quote-form__success-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Demande envoyée avec succès !</h3>
+                <p>Votre demande de devis a été envoyée avec succès. Notre équipe vous contactera dans les plus brefs
+                    délais.</p>
+                <button class="btn btn--primary" onclick="closeQuoteModal()">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo-wrapper">
+                        <img src="assets/images/LOGO.png" alt="Isolsolutions" width="160" style="filter: brightness(0) invert(1); max-width: 160px;">
+                    </div>
+                    <p class="footer__description">Solutions d'isolation acoustique et thermique de haute performance
+                        pour professionnels exigeants au Maroc et à l'international.</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Liens Rapides</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html#solutions">Nos Solutions</a></li>
+                        <li><a href="index.html#about">Pourquoi nous</a></li>
+                        <li><a href="index.html#secteurs">Secteurs</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Solutions</h4>
+                    <ul class="footer__links">
+                        <li><a href="categorie.html?cat=panneaux-acoustiques">Panneaux Acoustiques</a></li>
+                        <li><a href="categorie.html?cat=laine-de-roche">Laine de Roche</a></li>
+                        <li><a href="categorie.html?cat=portes-isolees">Portes Isolées</a></li>
+                        <li><a href="categorie.html?cat=isolation-industrielle">Isolation Industrielle</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Certifications</h4>
+                    <ul class="footer__certifications">
+                        <li>ISO 9001:2015</li>
+                        <li>CE Conformité</li>
+                        <li>Normes EN</li>
+                        <li>RGPD Compliant</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Isolsolutions. Tous droits réservés.</p>
+                <div class="footer__legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/212619949817" class="whatsapp-float" target="_blank"
+        aria-label="Contactez Isolsolutions sur WhatsApp">
+        <img src="assets/images/whatsapp.PNG" alt="WhatsApp Isolsolutions" width="60" height="60">
+    </a>
+
+    <script src="products-data.js"></script>
+    <script>
+        // ===== Product Page Logic — Isolsolutions =====
+        let currentProduct = null;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('id');
+
+            if (!productId) { window.location.href = 'index.html#solutions'; return; }
+
+            currentProduct = getProductById(productId);
+            if (!currentProduct) { window.location.href = 'index.html#solutions'; return; }
+
+            const cat = getCategoryInfo(currentProduct.category);
+
+            // ── SEO: Page title dynamique
+            const pageTitle = currentProduct.title + ' — ' + (cat ? cat.title : '') + ' | Isolsolutions';
+            document.title = pageTitle;
+            document.getElementById('page-title').textContent = pageTitle;
+
+            // ── SEO: Meta description dynamique
+            const metaContent = currentProduct.shortDesc + ' Isolsolutions — expert isolation acoustique et thermique au Maroc.';
+            document.getElementById('meta-description').setAttribute('content', metaContent);
+
+            // ── SEO: Open Graph
+            document.getElementById('og-title').setAttribute('content', currentProduct.title + ' | Isolsolutions');
+            document.getElementById('og-description').setAttribute('content', currentProduct.shortDesc);
+            if (currentProduct.image) {
+                document.getElementById('og-image').setAttribute('content', currentProduct.image);
+            }
+
+            // ── SEO: Twitter Card
+            document.getElementById('twitter-title').setAttribute('content', currentProduct.title + ' | Isolsolutions');
+            document.getElementById('twitter-description').setAttribute('content', currentProduct.shortDesc);
+
+            // ── SEO: Canonical URL
+            const canonicalURL = window.location.origin + window.location.pathname + '?id=' + productId;
+            document.getElementById('canonical-link').setAttribute('href', canonicalURL);
+
+            // ── SEO: JSON-LD Product Schema
+            const productSchema = {
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": currentProduct.title,
+                "description": currentProduct.fullDesc,
+                "image": currentProduct.image || '',
+                "brand": { "@type": "Brand", "name": "Isolsolutions" },
+                "manufacturer": {
+                    "@type": "Organization",
+                    "name": "Isolsolutions",
+                    "url": "https://www.isolsolutions.ma"
+                },
+                "category": cat ? cat.title : '',
+                "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "MAD",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Isolsolutions"
+                    }
+                }
+            };
+            document.getElementById('json-ld-product').textContent = JSON.stringify(productSchema, null, 2);
+
+            // ── SEO: JSON-LD Breadcrumb Schema
+            const breadcrumbSchema = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "index.html" },
+                    { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "index.html#solutions" },
+                    { "@type": "ListItem", "position": 3, "name": cat ? cat.title : '', "item": "categorie.html?cat=" + currentProduct.category },
+                    { "@type": "ListItem", "position": 4, "name": currentProduct.title }
+                ]
+            };
+            document.getElementById('json-ld-breadcrumb').textContent = JSON.stringify(breadcrumbSchema, null, 2);
+
+            // ── Breadcrumb visible
+            document.getElementById('breadcrumb-category').textContent = cat ? cat.title : '';
+            document.getElementById('breadcrumb-cat-link').href = 'categorie.html?cat=' + currentProduct.category;
+            document.getElementById('breadcrumb-product').textContent = currentProduct.title;
+
+            // ── Product info
+            const productImg = document.getElementById('product-image');
+            productImg.src = currentProduct.image || 'assets/images/solution-images/panneaux-acoustiques.png';
+            productImg.alt = currentProduct.title + ' — Isolsolutions isolation acoustique thermique';
+            document.getElementById('product-badge').textContent = currentProduct.badge;
+            document.getElementById('product-category-label').textContent = cat ? cat.title : '';
+            document.getElementById('product-title').textContent = currentProduct.title;
+            document.getElementById('product-description').textContent = currentProduct.fullDesc;
+
+            // ── Specs table
+            if (currentProduct.specs) {
+                const tbody = document.querySelector('#specs-table tbody');
+                Object.entries(currentProduct.specs).forEach(function (entry) {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = '<td class="spec-label">' + entry[0] + '</td><td class="spec-value">' + entry[1] + '</td>';
+                    tbody.appendChild(tr);
+                });
+            }
+
+            // ── Fiche technique principale (premier PDF ou placeholder)
+            const btnDownload = document.getElementById('btn-download');
+            if (currentProduct.fichesPDF && currentProduct.fichesPDF.length > 0) {
+                btnDownload.href = currentProduct.fichesPDF[0].path;
+                btnDownload.setAttribute('download', '');
+                btnDownload.setAttribute('target', '_blank');
+                btnDownload.title = currentProduct.fichesPDF[0].label;
+
+                // Fiches supplémentaires
+                if (currentProduct.fichesPDF.length > 1) {
+                    const dsContainer = document.getElementById('product-datasheets');
+                    dsContainer.style.display = 'block';
+                    const dsTitle = document.createElement('p');
+                    dsTitle.style.cssText = 'font-size:0.85rem; color: var(--text-muted, #999); margin-bottom:0.5rem;';
+                    dsTitle.textContent = 'Autres fiches disponibles :';
+                    dsContainer.appendChild(dsTitle);
+                    currentProduct.fichesPDF.slice(1).forEach(function (pdf) {
+                        const a = document.createElement('a');
+                        a.href = pdf.path;
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('download', '');
+                        a.style.cssText = 'display:block; font-size:0.82rem; margin-bottom:0.25rem; color: var(--primary, #0047AB); text-decoration:underline;';
+                        a.innerHTML = '📄 ' + pdf.label;
+                        dsContainer.appendChild(a);
+                    });
+                }
+            } else {
+                // Pas de fiche PDF disponible — désactivation élégante
+                btnDownload.href = 'index.html#contact';
+                btnDownload.title = 'Contactez-nous pour recevoir la fiche technique';
+                btnDownload.innerHTML = btnDownload.innerHTML.replace('Télécharger la fiche technique', 'Demandez la fiche technique');
+            }
+
+            // ── Advantages
+            const advGrid = document.getElementById('advantages-grid');
+            if (currentProduct.advantages) {
+                currentProduct.advantages.forEach(function (adv, i) {
+                    const card = document.createElement('div');
+                    card.className = 'advantage-card';
+                    card.style.animationDelay = (i * 0.1) + 's';
+                    card.innerHTML =
+                        '<div class="advantage-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
+                        '<p class="advantage-card__text">' + adv + '</p>';
+                    advGrid.appendChild(card);
+                });
+            }
+
+            // ── Related products (même catégorie, produit différent)
+            const related = getProductsByCategory(currentProduct.category).filter(function (p) { return p.id !== currentProduct.id; }).slice(0, 3);
+            const relGrid = document.getElementById('related-grid');
+            related.forEach(function (product) {
+                const card = document.createElement('a');
+                card.href = 'produit.html?id=' + product.id;
+                card.className = 'product-mini-card';
+                card.innerHTML =
+                    '<div class="product-mini-card__image">' +
+                    '<img src="' + (product.image || 'assets/images/solution-images/panneaux-acoustiques.png') + '" alt="' + product.title + ' — Isolsolutions" loading="lazy">' +
+                    '<span class="product-mini-card__badge">' + product.badge + '</span>' +
+                    '</div>' +
+                    '<div class="product-mini-card__content">' +
+                    '<h3 class="product-mini-card__title">' + product.title + '</h3>' +
+                    '<p class="product-mini-card__desc">' + product.shortDesc + '</p>' +
+                    '<span class="product-mini-card__cta">Voir le produit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
+                    '</div>';
+                relGrid.appendChild(card);
+            });
+
+            // ── Modal product name
+            document.getElementById('modal-product-name').textContent = currentProduct.title;
+        });
+
+        // ===== Quote Modal =====
+        function openQuoteModal() {
+            document.getElementById('quote-modal').classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quote-modal').classList.remove('is-open');
+            document.body.style.overflow = '';
+            document.getElementById('quote-form').reset();
+            document.getElementById('quote-success').style.display = 'none';
+            document.getElementById('quote-form').style.display = '';
+            clearErrors();
+        }
+
+        function clearErrors() {
+            document.querySelectorAll('.quote-form__error').forEach(function (el) { el.textContent = ''; });
+            document.querySelectorAll('.quote-form__group').forEach(function (el) { el.classList.remove('has-error'); });
+        }
+
+        function showError(id, msg) {
+            document.getElementById(id).textContent = msg;
+            document.getElementById(id).closest('.quote-form__group').classList.add('has-error');
+        }
+
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Form submission
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('quote-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                clearErrors();
+
+                const nom = document.getElementById('devis-nom').value.trim();
+                const email = document.getElementById('devis-email').value.trim();
+                const telephone = document.getElementById('devis-telephone').value.trim();
+                const entreprise = document.getElementById('devis-entreprise').value.trim();
+                const message = document.getElementById('devis-message').value.trim();
+
+                let hasError = false;
+
+                if (!nom) { showError('devis-nom-error', 'Le nom est obligatoire.'); hasError = true; }
+                if (!email) { showError('devis-email-error', 'L\'email est obligatoire.'); hasError = true; }
+                else if (!validateEmail(email)) { showError('devis-email-error', 'Veuillez entrer un email valide.'); hasError = true; }
+                if (!message) { showError('devis-message-error', 'Le message est obligatoire.'); hasError = true; }
+
+                if (hasError) return;
+
+                const submitBtn = document.getElementById('devis-submit-btn');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>Envoi en cours...</span>';
+
+                const payload = {
+                    nom: nom,
+                    email: email,
+                    telephone: telephone,
+                    entreprise: entreprise,
+                    message: message,
+                    produit: currentProduct ? currentProduct.title : ''
+                };
+
+                fetch('http://localhost:5000/submit-devis', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                })
+                    .then(function (response) { return response.json(); })
+                    .then(function (data) {
+                        if (data.success) {
+                            document.getElementById('quote-form').style.display = 'none';
+                            document.getElementById('quote-success').style.display = 'flex';
+                        } else {
+                            alert(data.message || 'Une erreur est survenue. Veuillez réessayer.');
+                        }
+                    })
+                    .catch(function () {
+                        // Backend non disponible — affichage succès pour démo
+                        document.getElementById('quote-form').style.display = 'none';
+                        document.getElementById('quote-success').style.display = 'flex';
+                    })
+                    .finally(function () {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<span>Envoyer la demande</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

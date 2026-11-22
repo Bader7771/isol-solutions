@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog Isolmaroc - Actualités, conseils techniques et études de cas sur l'isolation acoustique et thermique au Maroc.">
+    <title>Blog & Ressources - Isolmaroc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Isolmaroc Logo" width="200">
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="index.html#solutions" class="nav__link">Solutions</a></li>
+                <li><a href="index.html#about" class="nav__link">Pourquoi nous</a></li>
+                <li><a href="index.html#secteurs" class="nav__link">Secteurs</a></li>
+                <li><a href="blog.html" class="nav__link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero__content">
+                <span class="section-label">Expertise & Innovation</span>
+                <h1 class="blog-hero__title">Le Blog de l'Isolation Professionnelle</h1>
+                <p class="blog-hero__description">Retrouvez nos analyses techniques, études de cas et conseils d'experts
+                    pour vos projets d'isolation au Maroc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="blog-main container">
+        <div class="blog-layout">
+            <!-- Sidebar (Left) -->
+            <aside class="blog-sidebar">
+                <!-- Search (Top of sidebar) -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recherche</h3>
+                    <form class="search-form">
+                        <input type="text" placeholder="Mots-clés...">
+                        <button type="submit">OK</button>
+                    </form>
+                </div>
+
+                <!-- Categories -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="margin-right: 8px;">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                            </path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                        Catégories
+                    </h3>
+                    <ul class="widget-list widget-list--pills">
+                        <li class="active"><a href="#">Toutes les catégories <span>0</span></a></li>
+                        <li><a href="#">Isolation Thermique</a></li>
+                        <li><a href="#">Isolation Acoustique</a></li>
+                        <li><a href="#">Logistique & Transport</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sidebar-widget newsletter-widget">
+                    <h3 class="widget-title">Newsletter</h3>
+                    <p>Recevez nos derniers articles directement dans votre boîte mail.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn--white btn--full">S'abonner</button>
+                    </form>
+                </div>
+            </aside>
+
+            <!-- Articles Content Area -->
+            <div class="blog-content">
+                <!-- Top Search Bar (Above featured card) -->
+                <div class="blog-content__search">
+                    <form class="search-form search-form--wide">
+                        <input type="text" placeholder="Rechercher par sujet, mot-clé ou article...">
+                        <button type="submit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="blog-stats">
+                    <p><strong>4</strong> articles disponibles</p>
+                    <div class="blog-sort">
+                        <span>Les plus récents</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Featured Article (A la une) -->
+                <article class="blog-card blog-card--featured">
+                    <div class="blog-card__image">
+                        <img src="assets/blog-office.jpg" alt="Isolation phonique bureau">
+                        <span class="badge badge--featured">À la une</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h2 class="blog-card__title">L'importance de l'isolation phonique dans les espaces de travail
+                            modernes</h2>
+                        <p class="blog-card__excerpt">Le bruit est l'une des principales sources de distraction en
+                            entreprise. Découvrez comment une bonne isolation acoustique améliore la productivité et le
+                            bien-être des collaborateurs au Maroc.</p>
+                        <div class="blog-card__footer">
+                            <div class="blog-card__meta">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>2 min</span>
+                            </div>
+                            <a href="article-isolation-phonique.html" class="blog-card__link">Lire l'article
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Small Cards Grid -->
+                <div class="blog-grid blog-grid--refined">
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="assets/blog-tech.jpg" alt="Isolation vs Correction acoustique">
+                        </div>
+                        <div class="blog-card__content">
+                            <h2 class="blog-card__title">Isolation vs Correction Acoustique : Quelle différence ?</h2>
+                            <p class="blog-card__excerpt">Comprendre la différence entre isolation et correction est
+                                crucial pour la réussite de vos projets acoustiques.</p>
+                            <div class="blog-card__footer">
+                                <div class="blog-card__meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>2 min</span>
+                                </div>
+                                <a href="#" class="blog-card__link">Lire <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="assets/images/Sectors Section/sector-industrie.png"
+                                alt="Isolation thermique industrielle">
+                        </div>
+                        <div class="blog-card__content">
+                            <h2 class="blog-card__title">Structurer l'isolation vers une croissance durable</h2>
+                            <p class="blog-card__excerpt">Comment la laine de roche haute performance réduit vos coûts
+                                opérationnels et votre empreinte carbone.</p>
+                            <div class="blog-card__footer">
+                                <div class="blog-card__meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>2 min</span>
+                                </div>
+                                <a href="#" class="blog-card__link">Lire <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="assets/images/Sectors Section/sector-logistique.png" alt="Logistique">
+                        </div>
+                        <div class="blog-card__content">
+                            <h2 class="blog-card__title">Transport et dédouanement : facteur clé de performance</h2>
+                            <p class="blog-card__excerpt">Le transport international et le dédouanement sont des étapes
+                                clés de l'importation de matériaux d'isolation.</p>
+                            <div class="blog-card__footer">
+                                <div class="blog-card__meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>2 min</span>
+                                </div>
+                                <a href="#" class="blog-card__link">Lire <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="pagination__btn active">1</a>
+                    <a href="#" class="pagination__btn">2</a>
+                    <a href="#" class="pagination__next">Suivant &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- (Même contenu que index.html pour la cohérence) -->
+                <div class="footer__section">
+                    <div class="footer__logo-wrapper">
+                        <h3 class="footer__logo">ISOLMAROC</h3>
+                    </div>
+                    <p class="footer__description">Solutions d'isolation acoustique et thermique de haute performance
+                        pour professionnels exigeants.</p>
+                </div>
+                <!-- ... autres sections footer ... -->
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Isolmaroc. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
