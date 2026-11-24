@@ -1,0 +1,56 @@
+{
+  "assets/images/products/laine-de-roche/rockwool-rockfacade/main.png": {
+    "document": "data_produits/Laine de roche/Fiche produit Rockfaçade.pdf",
+    "page_index": 0,
+    "image_index": 0,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/rockwool-rockmur-kraft/main.png": {
+    "document": "data_produits/Laine de roche/Fiche produit Rockmur kraft.pdf",
+    "page_index": 0,
+    "image_index": 2,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/rockwool-rocksono-base/main.png": {
+    "document": "data_produits/Laine de roche/fiche-technique-rocksono-base-fr.pdf",
+    "page_index": 0,
+    "image_index": 1,
+    "kind": "application-photo"
+  },
+  "assets/images/products/laine-de-roche/rockwool-rocksate-duo-plus/main.png": {
+    "document": "data_produits/Laine de roche/ft_rocksate-duo-plus_fr.pdf",
+    "page_index": 0,
+    "image_index": 1,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/rockwool-sonorock-plus/main.png": {
+    "document": "data_produits/Laine de roche/ft_sonorock-plus_es.pdf",
+    "page_index": 0,
+    "image_index": 0,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/volcalis-comfort-panneau/main.png": {
+    "document": "data_produits/Laine de roche/FicheTechnique_Volcalis_ComfortPanneau.pdf",
+    "page_index": 0,
+    "image_index": 1,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/volcalis-comfort-rouleau/main.png": {
+    "document": "data_produits/Laine de roche/FicheTechnique_Volcalis_ComfortRouleau (1).pdf",
+    "page_index": 0,
+    "image_index": 1,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/terrawool-tw150/main.png": {
+    "document": "data_produits/Laine de roche/FICHE TECHNIQUE TERRAWOOL TW150_250512_134055 (1).pdf",
+    "page_index": 0,
+    "image_index": 2,
+    "kind": "product-photo"
+  },
+  "assets/images/products/laine-de-roche/glasrock-panneau-kraft/main.png": {
+    "document": "data_produits/Laine de roche/fiche technique panneaux kraft glasse rock.pdf",
+    "page_index": 0,
+    "image_index": 0,
+    "kind": "manufacturer-logo"
+  }
+}

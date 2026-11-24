@@ -1,217 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" id="meta-description"
-        content="Isolsolutions — Découvrez notre gamme complète de produits d'isolation acoustique et thermique professionnelle. Matériaux certifiés, performances techniques et livraison Maroc.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Isolsolutions">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Isolsolutions">
-    <meta property="og:title" id="og-title" content="Catégorie Produits — Isolsolutions">
-    <meta property="og:description" id="og-description" content="Isolsolutions — Solutions d'isolation acoustique et thermique de haute performance.">
-    <meta property="og:locale" content="fr_MA">
-    <link rel="canonical" id="canonical-link" href="">
-    <title id="page-title">Catégorie Produits — Isolsolutions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171717" />
+    <title>Gammes de produits | Isolmaroc</title>
+    <meta
+      name="description"
+      content="Découvrez les gammes de solutions acoustiques et thermiques Isolmaroc pour votre projet professionnel."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gammes de produits | Isolmaroc" />
+    <meta
+      property="og:description"
+      content="Découvrez les gammes de solutions acoustiques et thermiques Isolmaroc pour votre projet professionnel."
+    />
+    <meta property="og:image" content="assets/images/LOGO.png" />
+    <link rel="icon" type="image/png" href="assets/images/LOGO.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="index.html">
-                    <img src="assets/images/LOGO.png" alt="Isolsolutions — Expert isolation acoustique et thermique" width="200">
-                </a>
-            </div>
-            <ul class="nav__menu">
-                <li><a href="index.html#solutions" class="nav__link">Solutions</a></li>
-                <li><a href="index.html#about" class="nav__link">Pourquoi nous</a></li>
-                <li><a href="index.html#secteurs" class="nav__link">Secteurs</a></li>
-                <li><a href="blog.html" class="nav__link">Blog</a></li>
-                <li><a href="index.html#contact" class="nav__link nav__link--cta">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Category Hero -->
-    <section class="category-hero" id="category-hero">
-        <div class="category-hero__bg">
-            <img id="category-hero-img" src="" alt="" loading="eager">
-            <div class="category-hero__overlay"></div>
-        </div>
-        <div class="container category-hero__content">
-            <nav class="breadcrumb" aria-label="Fil d'Ariane">
-                <a href="index.html">Accueil</a>
-                <span class="breadcrumb__sep">›</span>
-                <a href="index.html#solutions">Solutions</a>
-                <span class="breadcrumb__sep">›</span>
-                <span id="breadcrumb-category" class="breadcrumb__current"></span>
-            </nav>
-            <div class="category-hero__badge" id="category-badge"></div>
-            <h1 id="category-title" class="category-hero__title"></h1>
-            <p id="category-description" class="category-hero__desc"></p>
-        </div>
-    </section>
-
-    <!-- Products Grid -->
-    <section class="products-section">
-        <div class="container">
-            <div class="products-section__header">
-                <h2 class="products-section__title">Nos Produits</h2>
-                <p class="products-section__count" id="products-count"></p>
-            </div>
-            <div class="products-grid" id="products-grid">
-                <!-- Dynamically populated -->
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="category-cta">
-        <div class="container">
-            <div class="category-cta__wrapper">
-                <div class="category-cta__text">
-                    <h2>Vous ne trouvez pas le produit qu'il vous faut ?</h2>
-                    <p>Notre équipe technique peut vous proposer une solution sur mesure adaptée à vos contraintes.</p>
-                </div>
-                <a href="index.html#contact" class="btn btn--primary btn--large">Contactez nos experts</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <div class="footer__logo-wrapper">
-                        <img src="assets/images/LOGO.png" alt="Isolsolutions" width="160" style="filter: brightness(0) invert(1); max-width: 160px;">
-                    </div>
-                    <p class="footer__description">Solutions d'isolation acoustique et thermique de haute performance
-                        pour professionnels exigeants au Maroc et à l'international.</p>
-                </div>
-                <div class="footer__section">
-                    <h4 class="footer__title">Liens Rapides</h4>
-                    <ul class="footer__links">
-                        <li><a href="index.html#solutions">Nos Solutions</a></li>
-                        <li><a href="index.html#about">Pourquoi nous</a></li>
-                        <li><a href="index.html#secteurs">Secteurs</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer__section">
-                    <h4 class="footer__title">Solutions</h4>
-                    <ul class="footer__links">
-                        <li><a href="categorie.html?cat=panneaux-acoustiques">Panneaux Acoustiques</a></li>
-                        <li><a href="categorie.html?cat=laine-de-roche">Laine de Roche</a></li>
-                        <li><a href="categorie.html?cat=portes-isolees">Portes Isolées</a></li>
-                        <li><a href="categorie.html?cat=isolation-industrielle">Isolation Industrielle</a></li>
-                    </ul>
-                </div>
-                <div class="footer__section">
-                    <h4 class="footer__title">Certifications</h4>
-                    <ul class="footer__certifications">
-                        <li>ISO 9001:2015</li>
-                        <li>CE Conformité</li>
-                        <li>Normes EN</li>
-                        <li>RGPD Compliant</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2026 Isolsolutions. Tous droits réservés.</p>
-                <div class="footer__legal">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">CGV</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp -->
-    <a href="https://wa.me/212619949817" class="whatsapp-float" target="_blank"
-        aria-label="Contactez-nous sur WhatsApp">
-        <img src="assets/images/whatsapp.PNG" alt="WhatsApp" width="60" height="60">
-    </a>
-
-    <script src="products-data.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const params = new URLSearchParams(window.location.search);
-            const catSlug = params.get('cat');
-
-            if (!catSlug || !CATEGORIES[catSlug]) {
-                window.location.href = 'index.html#solutions';
-                return;
-            }
-
-            const cat = CATEGORIES[catSlug];
-            const products = getProductsByCategory(catSlug);
-
-            // ── SEO: Titre dynamique
-            const pageTitle = cat.title + ' — Isolation Acoustique & Thermique | Isolsolutions';
-            document.title = pageTitle;
-            if (document.getElementById('page-title')) document.getElementById('page-title').textContent = pageTitle;
-
-            // ── SEO: Meta description dynamique
-            const metaDesc = cat.metaDesc || (cat.description + ' Isolsolutions — expert isolation au Maroc.');
-            const metaEl = document.getElementById('meta-description');
-            if (metaEl) metaEl.setAttribute('content', metaDesc);
-
-            // ── SEO: Open Graph dynamique
-            const ogTitle = document.getElementById('og-title');
-            if (ogTitle) ogTitle.setAttribute('content', cat.title + ' | Isolsolutions');
-            const ogDesc = document.getElementById('og-description');
-            if (ogDesc) ogDesc.setAttribute('content', metaDesc);
-
-            // ── SEO: Canonical URL
-            const canonicalEl = document.getElementById('canonical-link');
-            if (canonicalEl) canonicalEl.setAttribute('href', window.location.origin + window.location.pathname + '?cat=' + catSlug);
-
-            // Hero
-            document.getElementById('category-hero-img').src = cat.image;
-            document.getElementById('category-hero-img').alt = cat.title + ' — Isolsolutions isolation professionnelle';
-            document.getElementById('category-badge').textContent = cat.badge;
-            document.getElementById('category-title').textContent = cat.title;
-            document.getElementById('category-description').textContent = cat.description;
-            document.getElementById('breadcrumb-category').textContent = cat.title;
-
-            // Products count
-            document.getElementById('products-count').textContent = products.length + ' produit' + (products.length > 1 ? 's' : '') + ' disponible' + (products.length > 1 ? 's' : '');
-
-            // Build product cards
-            const grid = document.getElementById('products-grid');
-            products.forEach(function (product, index) {
-                const card = document.createElement('a');
-                card.href = 'produit.html?id=' + product.id;
-                card.className = 'product-mini-card';
-                card.style.animationDelay = (index * 0.08) + 's';
-
-                card.innerHTML =
-                    '<div class="product-mini-card__image">' +
-                    '<img src="' + (product.image || 'assets/images/solution-images/panneaux-acoustiques.png') + '" alt="' + product.title + ' — Isolsolutions" loading="lazy">' +
-                    '<span class="product-mini-card__badge">' + product.badge + '</span>' +
-                    '</div>' +
-                    '<div class="product-mini-card__content">' +
-                    '<h3 class="product-mini-card__title">' + product.title + '</h3>' +
-                    '<p class="product-mini-card__desc">' + product.shortDesc + '</p>' +
-                    '<span class="product-mini-card__cta">Voir le produit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
-                    '</div>';
-
-                grid.appendChild(card);
-            });
-        });
-    </script>
-</body>
-
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/ui.css" />
+    <script type="module" src="assets/js/app.js"></script>
+  </head>
+  <body data-page="catalog">
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <div id="site-header"></div>
+    <main id="main-content" tabindex="-1">
+      <div class="wrap empty-page">
+        <h1>Gammes de produits</h1>
+        <p>Chargement des solutions d’isolation…</p>
+      </div>
+    </main>
+    <noscript
+      ><p>
+        Activez JavaScript pour parcourir le catalogue. Notre équipe reste
+        joignable :
+        <a href="mailto:contact@isolmaroc.ma">contact@isolmaroc.ma</a> ou
+        <a href="https://wa.me/212619949817">WhatsApp</a>.
+      </p></noscript
+    >
+    <div id="site-footer"></div>
+    <div id="contact-dock"></div>
+  </body>
 </html>

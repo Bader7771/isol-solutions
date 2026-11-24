@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Isolsolutions Product Catalog Schema",
+  "description": "JSON Schema for the cleaned Isolsolutions B2B product catalog",
+  "type": "object",
+  "required": ["categories", "products", "metadata"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "last_updated", "total_products", "total_categories", "brand"],
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date-time" },
+        "total_products": { "type": "integer", "minimum": 0 },
+        "total_categories": { "type": "integer", "minimum": 0 },
+        "brand": { "type": "string" },
+        "source": { "type": "string" }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["category_id", "title", "description", "image", "badge"],
+        "properties": {
+          "category_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "image": { "type": "string" },
+          "badge": { "type": "string" },
+          "meta_description": { "type": "string" },
+          "product_count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["product_id", "category_id", "product_name", "slug", "brand", "short_description", "full_description", "badge", "primary_image"],
+        "properties": {
+          "product_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Unique kebab-case identifier"
+          },
+          "category_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Must match a key in categories"
+          },
+          "product_name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Full product name"
+          },
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "URL-safe slug derived from product_id"
+          },
+          "brand": {
+            "type": "string",
+            "description": "Manufacturer brand (extracted from specs or default Isolsolutions)"
+          },
+          "category_name": {
+            "type": "string",
+            "description": "Human-readable category name"
+          },
+          "short_description": {
+            "type": "string",
+            "description": "Brief product summary"
+          },
+          "full_description": {
+            "type": "string",
+            "description": "Detailed product description"
+          },
+          "badge": {
+            "type": "string",
+            "description": "Marketing badge label"
+          },
+          "primary_image": {
+            "type": "string",
+            "description": "Main product image path"
+          },
+          "images": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "All product image paths"
+          },
+          "technical_documents": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "path"],
+              "properties": {
+                "label": { "type": "string" },
+                "path": { "type": "string" }
+              }
+            }
+          },
+          "advantages": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "specifications": {
+            "type": "object",
+            "additionalProperties": { "type": "string" },
+            "description": "Technical specifications as key-value pairs"
+          },
+          "seo_keywords": {
+            "type": "string"
+          },
+          "source_file": {
+            "type": "string",
+            "description": "Original source file"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

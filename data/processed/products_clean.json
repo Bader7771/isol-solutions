@@ -1,0 +1,1393 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-11-22T17:39:01.566327+00:00",
+    "total_products": 34,
+    "total_categories": 6,
+    "brand": "Isolsolutions",
+    "source": "products-data.js",
+    "pipeline_version": "1.0.0"
+  },
+  "categories": {
+    "panneaux-acoustiques": {
+      "category_id": "panneaux-acoustiques",
+      "title": "Panneaux Acoustiques",
+      "description": "Solutions d'absorption et d'isolation phonique haute performance pour espaces professionnels, tertiaires et hôteliers.",
+      "image": "assets/images/solution-images/panneaux-acoustiques.png",
+      "badge": "Premium",
+      "meta_description": "Panneaux acoustiques professionnels Isolsolutions : absorption αw jusqu'à 0.95, classement feu A2-s1,d0. Livraison Maroc. Devis gratuit.",
+      "product_count": 5
+    },
+    "laine-de-roche": {
+      "category_id": "laine-de-roche",
+      "title": "Laine de Roche",
+      "description": "Isolation thermique et acoustique haute densité pour performances énergétiques et phoniques optimales.",
+      "image": "assets/images/solution-images/laine-roche.png",
+      "badge": "Certifié",
+      "meta_description": "Laine de roche Isolsolutions : panneaux rigides, rouleaux et coquilles. Incombustible A1, λ = 0.037–0.040 W/m·K. Devis rapide.",
+      "product_count": 9
+    },
+    "portes-isolees": {
+      "category_id": "portes-isolees",
+      "title": "Portes Isolées",
+      "description": "Portes acoustiques et thermiques ultra-performantes Rw 32 à 50 dB pour zones à hautes exigences phoniques.",
+      "image": "assets/images/solution-images/portes-isolees.png",
+      "badge": "Sur mesure",
+      "meta_description": "Portes acoustiques Isolsolutions : Rw 32 à 50 dB, coupe-feu EI60, seuil motorisé. Sur mesure et certifiées EN ISO 10140.",
+      "product_count": 5
+    },
+    "revetements-techniques": {
+      "category_id": "revetements-techniques",
+      "title": "Revêtements Techniques",
+      "description": "Revêtements spécialisés pour contrôle acoustique, protection thermique et traitement phonique avancés.",
+      "image": "assets/images/solution-images/revetements.png",
+      "badge": "Innovation",
+      "meta_description": "Revêtements acoustiques techniques Isolsolutions : mousse mélamine, PET recyclé, composite alu. Solutions pour studios et espaces professionnels.",
+      "product_count": 5
+    },
+    "isolation-industrielle": {
+      "category_id": "isolation-industrielle",
+      "title": "Isolation Machines Industrielles",
+      "description": "Protection acoustique et thermique pour équipements industriels, compresseurs, HVAC et systèmes complexes.",
+      "image": "assets/images/solution-images/isolation-machines.png",
+      "badge": "Industrie",
+      "meta_description": "Isolation industrielle Isolsolutions : capotages, écrans acoustiques, matelas HT, silencieux ventilation. Réduction jusqu'à 35 dB(A).",
+      "product_count": 5
+    },
+    "produits-sur-commande": {
+      "category_id": "produits-sur-commande",
+      "title": "Produits sur Commande",
+      "description": "Accessoires et pièces techniques d'isolation disponibles sur demande : insulation pins, bandes alu, colles haute température.",
+      "image": "assets/images/solution-images/solution-sur-commande.png",
+      "badge": "Support International",
+      "meta_description": "Accessoires isolation sur commande Isolsolutions : insulation pins, rondelles, bandes aluminium, colles HT. Import Europe. Devis rapide.",
+      "product_count": 5
+    }
+  },
+  "products": [
+    {
+      "product_id": "panneau-mural-absorb-40",
+      "slug": "panneau-mural-absorb-40",
+      "category_id": "panneaux-acoustiques",
+      "category_name": "Panneaux Acoustiques",
+      "product_name": "Panneau Mural Absorbant 40 mm",
+      "brand": "Isolsolutions",
+      "short_description": "Panneau absorbant haute performance pour murs, épaisseur 40 mm — idéal bureaux et salles de réunion.",
+      "full_description": "Le Panneau Mural Absorbant 40 mm d'Isolsolutions est fabriqué en fibre minérale haute densité (90 kg/m³), recouvert d'un voile de verre décoratif résistant. Avec un coefficient d'absorption αw = 0.85, il réduit efficacement les nuisances sonores et la réverbération dans les open-spaces, bureaux paysagers, salles de réunion et espaces tertiaires. Son classement au feu A2-s1,d0 garantit la conformité aux normes de sécurité incendie les plus strictes. La fixation s'effectue par collage ou sur rails métalliques, permettant une installation rapide et soignée. Ses dimensions standard de 1200×600 mm et son voile décoratif personnalisable en font un choix esthétique autant que technique.",
+      "badge": "Best-seller",
+      "primary_image": "data_produits/Panneaux Acoustiques/1.jpg",
+      "images": [
+        "data_produits/Panneaux Acoustiques/1.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Absorption acoustique αw = 0.85 — performance certifiée",
+        "Classement feu A2-s1,d0 conforme ERP",
+        "Voile de verre décoratif personnalisable",
+        "Installation rapide par collage ou rails",
+        "Dimensions : 1200×600×40 mm — format standard",
+        "Densité : 90 kg/m³ — stabilité dimensionnelle garantie"
+      ],
+      "specifications": {
+        "Épaisseur": "40 mm",
+        "Densité": "90 kg/m³",
+        "Coefficient d'absorption αw": "0.85",
+        "Classement au feu": "A2-s1,d0",
+        "Dimensions": "1200 × 600 mm",
+        "Fixation": "Collage / Rails métalliques"
+      },
+      "seo_keywords": "panneau acoustique mural 40mm, absorption sonore bureau, isolation phonique salle réunion, panneau absorbant αw 0.85, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "panneau-mural-absorb-50",
+      "slug": "panneau-mural-absorb-50",
+      "category_id": "panneaux-acoustiques",
+      "category_name": "Panneaux Acoustiques",
+      "product_name": "Panneau Mural Absorbant 50 mm",
+      "brand": "Isolsolutions",
+      "short_description": "Version renforcée 50 mm — isolation acoustique supérieure avec absorption des basses fréquences.",
+      "full_description": "Le Panneau Mural Absorbant 50 mm d'Isolsolutions représente la solution de référence pour les environnements exigeant une isolation phonique maximale. Fabriqué en fibre minérale densité 100 kg/m³, ce panneau atteint un coefficient d'absorption αw = 0.95 — parmi les plus élevés du marché. Son épaisseur de 50 mm optimise l'absorption des basses fréquences, souvent les plus difficiles à traiter. Disponible en finition voile de verre ou tissu tendu acoustique au choix, il s'intègre harmonieusement dans les hôtels, auditoriums, salles de conférence et espaces de travail premium. Classement feu A2-s1,d0.",
+      "badge": "Premium",
+      "primary_image": "data_produits/Panneaux Acoustiques/2.jpg",
+      "images": [
+        "data_produits/Panneaux Acoustiques/2.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Absorption acoustique αw = 0.95 — niveau élite",
+        "Excellente performance sur les basses fréquences",
+        "Finition tissu tendu ou voile de verre au choix",
+        "Classement feu A2-s1,d0 — conforme ERP",
+        "Dimensions : 1200×600×50 mm",
+        "Densité : 100 kg/m³ — robustesse maximale"
+      ],
+      "specifications": {
+        "Épaisseur": "50 mm",
+        "Densité": "100 kg/m³",
+        "Coefficient d'absorption αw": "0.95",
+        "Classement au feu": "A2-s1,d0",
+        "Dimensions": "1200 × 600 mm",
+        "Finition": "Voile de verre ou tissu tendu"
+      },
+      "seo_keywords": "panneau acoustique 50mm premium, absorption basses fréquences, isolation phonique auditorium, panneau mural αw 0.95, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "panneau-plafond-suspendu",
+      "slug": "panneau-plafond-suspendu",
+      "category_id": "panneaux-acoustiques",
+      "category_name": "Panneaux Acoustiques",
+      "product_name": "Panneau Plafond Suspendu",
+      "brand": "Isolsolutions",
+      "short_description": "Dalle acoustique pour plafonds suspendus, finition lisse blanche — compatible ossatures T24 et T15.",
+      "full_description": "La Dalle Acoustique Plafond Suspendu d'Isolsolutions est conçue pour les faux plafonds en laine minérale haute densité. Sa surface lisse peinte en blanc s'intègre dans tous types d'environnements professionnels. Avec un coefficient αw = 0.90, elle réduit significativement la réverbération dans les espaces ouverts, restaurants, boutiques et hôtels. Compatible avec les ossatures standard T24 et T15. Disponible en format 600×600 mm ou 1200×600 mm avec bords droits ou chanfreinés selon les exigences esthétiques.",
+      "badge": "Populaire",
+      "primary_image": "data_produits/Panneaux Acoustiques/1743145388089.png",
+      "images": [
+        "data_produits/Panneaux Acoustiques/1743145388089.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique High Quality Ceiling Panels (EN)",
+          "path": "data_produits/Panneaux Acoustiques/High Quality perf Round_Ceiling_Panels_datasheet_EN_24mm.pdf"
+        }
+      ],
+      "advantages": [
+        "Absorption αw = 0.90 — performances certifiées",
+        "Surface lisse peinte en blanc — esthétique soignée",
+        "Compatible ossatures T24 et T15",
+        "Classement feu A2-s1,d0 — sécurité maximale",
+        "Formats 600×600 et 1200×600 mm",
+        "Bords droits ou chanfreinés selon besoin"
+      ],
+      "specifications": {
+        "Épaisseur": "20 mm",
+        "Densité": "80 kg/m³",
+        "Coefficient d'absorption αw": "0.90",
+        "Classement au feu": "A2-s1,d0",
+        "Formats disponibles": "600×600 / 1200×600 mm",
+        "Ossatures compatibles": "T24 / T15"
+      },
+      "seo_keywords": "dalle acoustique plafond suspendu, faux plafond acoustique, isolation plafond bureau hôtel, αw 0.90, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "panneau-design-bois",
+      "slug": "panneau-design-bois",
+      "category_id": "panneaux-acoustiques",
+      "category_name": "Panneaux Acoustiques",
+      "product_name": "Panneau Acoustique Bois Perforé",
+      "brand": "Isolsolutions",
+      "short_description": "Panneau décoratif bois perforé avec âme laine minérale — esthétique et acoustique pour hôtels et conférences.",
+      "full_description": "Le Panneau Acoustique Bois Perforé d'Isolsolutions allie performance sonique et raffinement esthétique. Sa structure en MDF perforé (perforation ronde ou oblongue) intègre un voile acoustique noir en face arrière et une âme en laine minérale, garantissant une absorption αw jusqu'à 0.85. Disponible en placage bois naturel (chêne, noyer, hêtre), il s'adapte parfaitement aux hôtels luxueux, salles de conférence, restaurants haut de gamme et espaces de réception. Disponible sur mesure selon vos dimensions et configurations de perforation.",
+      "badge": "Design",
+      "primary_image": "data_produits/Panneaux Acoustiques/362F62D5-A850-4EDF-A39E-5B6196F67329.jpg",
+      "images": [
+        "data_produits/Panneaux Acoustiques/362F62D5-A850-4EDF-A39E-5B6196F67329.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Finition placage bois naturel — chêne, noyer, hêtre",
+        "Absorption jusqu'à αw 0.85 selon configuration",
+        "Perforations rondes ou oblongues personnalisables",
+        "Âme laine minérale haute densité intégrée",
+        "Dimensions disponibles sur mesure",
+        "Idéal hôtels, salles de conférence et restaurants"
+      ],
+      "specifications": {
+        "Épaisseur totale": "32–50 mm",
+        "Épaisseur MDF": "16–19 mm",
+        "Coefficient d'absorption αw": "0.70 – 0.85",
+        "Essences bois": "Chêne, Noyer, Hêtre",
+        "Classement au feu": "B-s2,d0",
+        "Perforation": "Ronde ou oblongue"
+      },
+      "seo_keywords": "panneau acoustique bois perforé, décoration acoustique hôtel, isolation phonique design, MDF perforé laine minérale, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "bafle-acoustique-vertical",
+      "slug": "bafle-acoustique-vertical",
+      "category_id": "panneaux-acoustiques",
+      "category_name": "Panneaux Acoustiques",
+      "product_name": "Baffle Acoustique Vertical Suspendu",
+      "brand": "Isolsolutions",
+      "short_description": "Baffle suspendu vertical double face pour grands espaces ouverts — réduction de réverbération efficace.",
+      "full_description": "Le Baffle Acoustique Vertical Suspendu d'Isolsolutions est la solution idéale pour réduire la réverbération dans les grands volumes architecturaux : halls d'entrée, restaurants, open-spaces, centres commerciaux. Fabriqué en laine minérale haute densité enveloppée de tissu acoustique décoratif, il offre une absorption sur les deux faces. La fixation par câbles acier inoxydables permet une installation flexible et élégante. Ses dimensions de 1200×300 mm et son épaisseur de 50 mm en font un équipement performant et discret.",
+      "badge": "Nouveau",
+      "primary_image": "data_produits/Panneaux Acoustiques/c83aa1b50f7e47b9c06d2326a3d5b4ad.jpg",
+      "images": [
+        "data_produits/Panneaux Acoustiques/c83aa1b50f7e47b9c06d2326a3d5b4ad.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Absorption double face — efficacité maximale",
+        "Réduction significative de la réverbération",
+        "Fixation par câbles acier inoxydable",
+        "Tissu décoratif acoustique au choix",
+        "Idéal grands espaces, halls, open-spaces",
+        "Format compact : 1200×300×50 mm"
+      ],
+      "specifications": {
+        "Dimensions": "1200 × 300 mm",
+        "Épaisseur": "50 mm",
+        "Densité": "60 kg/m³",
+        "Coefficient d'absorption αw": "0.80 (montage A)",
+        "Classement au feu": "A2-s1,d0",
+        "Fixation": "Câbles acier inoxydable"
+      },
+      "seo_keywords": "baffle acoustique suspendu, réduction réverbération open space, panneau acoustique suspendu hall, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rockwool-rockfacade",
+      "slug": "rockwool-rockfacade",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Rockwool Rockfaçade",
+      "brand": "Rockwool",
+      "short_description": "Panneau laine de roche mono-densité non revêtu pour l'isolation thermique par l'extérieur (ITE) sous bardage ventilé — incombustible A1.",
+      "full_description": "Le Rockwool Rockfaçade est un panneau en laine de roche mono-densité non revêtu, spécialement conçu pour l'isolation thermique par l'extérieur (ITE) des façades ventilées sous bardage rapporté avec lame d'air. Incombustible classé Euroclasse A1, il associe sécurité incendie maximale et haute performance énergétique avec une conductivité thermique λ = 0,035 W/m·K. Léger et stable dans le temps, il ne se déforme pas et conserve ses propriétés isolantes pendant des décennies. Avec seulement 2 fixations par panneau, sa pose est rapide et économique. Répulsif à l'eau, il protège durablement la structure du bâtiment contre l'humidité. Idéal pour les projets neufs et de rénovation au Maroc recherchant une isolation thermique et acoustique durable, performante et certifiée ACERMI. Dimensions 1350 × 600 mm, épaisseurs disponibles de 40 à 240 mm (R jusqu'à 6,85 m²·K/W).",
+      "badge": "Façade ventilée",
+      "primary_image": "assets/images/products/laine-de-roche/rockwool-rockfacade/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/rockwool-rockfacade/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Rockwool Rockfaçade",
+          "path": "data_produits/Laine de roche/Fiche produit Rockfaçade.pdf"
+        }
+      ],
+      "advantages": [
+        "Incombustible Euroclasse A1 — sécurité incendie façade maximale",
+        "Conductivité thermique λ = 0,035 W/m·K — haute performance énergétique",
+        "Panneau léger, pose rapide avec seulement 2 fixations/panneau",
+        "Ne se déforme pas, conserve ses performances pendant des décennies",
+        "Répulsif à l'eau — protège durablement la structure",
+        "Certifié ACERMI 02/015/027 & KEYMARK — conformité garantie"
+      ],
+      "specifications": {
+        "Marque": "Rockwool",
+        "Type de produit": "Panneau mono-densité non revêtu (ITE)",
+        "Masse volumique": "35 à 39 kg/m³",
+        "Conductivité thermique λ": "0,035 W/m·K",
+        "Classement au feu": "A1 — Incombustible (Euroclasse)",
+        "Dimensions": "1350 × 600 mm",
+        "Épaisseurs disponibles": "40 à 240 mm",
+        "Résistance thermique R": "1,10 à 6,85 m²·K/W",
+        "Stabilité dimensionnelle": "T3",
+        "Certifications": "ACERMI 02/015/027 · KEYMARK 008-SDG5-027 · DoP CPR-DoP-FR-019"
+      },
+      "seo_keywords": "Rockwool Rockfaçade Maroc, panneau laine de roche façade ventilée, isolation thermique par l'extérieur ITE Maroc, panneau isolant bardage incombustible A1, isolation thermique et acoustique façade, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rockwool-rockmur-kraft",
+      "slug": "rockwool-rockmur-kraft",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Rockwool Rockmur Kraft",
+      "brand": "Rockwool",
+      "short_description": "Panneau laine de roche revêtu d'un kraft polyéthylène pour l'isolation des murs par l'intérieur en contre-cloison — Rw 42 dB.",
+      "full_description": "Le Rockwool Rockmur Kraft est un panneau de laine de roche revêtu d'un pare-vapeur kraft polyéthylène, référence de la gamme « Les Essentiels » pour l'isolation thermique et acoustique des murs par l'intérieur en contre-cloison. Souple et léger, il se pose rapidement entre ossatures et montants, sans contrainte et avec très peu de perte de surface intérieure. Avec une conductivité thermique λ = 0,035 W/m·K et une réaction au feu A1 (âme nue incombustible), il offre un excellent compromis performance/confort. Sa performance acoustique est remarquable : associé à une plaque BA13, le Rockmur 40 mm atteint un affaiblissement Rw = 42 (-4 ; -10) dB et un indice Ra de 38 dB. Classé A+ pour la qualité de l'air intérieur, il garantit un intérieur sain. Idéal pour l'isolation des murs périphériques, contre-cloisons maçonnées ou sur ossature, garages et abris au Maroc. Dimensions 1350 × 600 mm, épaisseurs de 40 à 140 mm.",
+      "badge": "Murs intérieurs",
+      "primary_image": "assets/images/products/laine-de-roche/rockwool-rockmur-kraft/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/rockwool-rockmur-kraft/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Rockwool Rockmur Kraft",
+          "path": "data_produits/Laine de roche/Fiche produit Rockmur kraft.pdf"
+        }
+      ],
+      "advantages": [
+        "Isolation thermique et acoustique combinée — Rw 42 dB avec BA13",
+        "Revêtement kraft polyéthylène intégré — pare-vapeur et pose facilitée",
+        "Conductivité thermique λ = 0,035 W/m·K",
+        "Âme incombustible A1 — sécurité incendie",
+        "Classé A+ — meilleur classement qualité de l'air intérieur",
+        "Pose rapide entre ossatures avec peu de perte de surface"
+      ],
+      "specifications": {
+        "Marque": "Rockwool",
+        "Type de produit": "Panneau revêtu kraft polyéthylène (contre-cloison)",
+        "Masse volumique": "40 kg/m³ (40 mm) · 32 kg/m³ (45 à 140 mm)",
+        "Conductivité thermique λ": "0,035 W/m·K",
+        "Classement au feu": "Âme nue : A1 / kraft : NPD",
+        "Performance acoustique": "Rw = 42 (-4 ; -10) dB · Ra 38 dB (40 mm + BA13)",
+        "Dimensions": "1350 × 600 mm",
+        "Épaisseurs disponibles": "40 à 140 mm",
+        "Résistance thermique R": "1,10 à 4,00 m²·K/W",
+        "Étiquetage sanitaire": "A+",
+        "Certifications": "ACERMI 02/015/025 · KEYMARK 008-SDG5-025 · DoP CPR-DoP-FR-028"
+      },
+      "seo_keywords": "Rockwool Rockmur Kraft Maroc, panneau laine de roche mur intérieur, isolation phonique contre-cloison, isolation acoustique mur Rw 42 dB, panneau kraft pare-vapeur, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rockwool-rocksono-base",
+      "slug": "rockwool-rocksono-base",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Rockwool RockSono Base",
+      "brand": "Rockwool",
+      "short_description": "Panneau léger et souple de laine de roche pour l'isolation acoustique et thermique des cloisons et constructions à ossature bois ou métallique.",
+      "full_description": "Le Rockwool RockSono Base est un panneau léger et souple de laine de roche (environ 35 kg/m³) conçu pour l'isolation thermique, acoustique et anti-feu par remplissage de cloisons intérieures à structure bois ou métallique, de contre-cloisons, ainsi que pour les constructions en bois (sols, cloisons et plafonds). Excellent absorbant acoustique, il augmente significativement l'isolation phonique de la paroi avec un coefficient d'absorption acoustique αw atteignant 1,00. Classé Euroclasse A1, il est totalement incombustible et résiste à des températures supérieures à 1 000 °C sans dégager de fumées toxiques. Sa conductivité thermique λ = 0,037 W/m·K et l'absence de joints entre panneaux évitent les ponts thermiques et garantissent des performances constantes pendant toute la durée de vie du bâtiment. Répulsif à l'eau, non hygroscopique et entièrement recyclable, il constitue une solution d'isolation saine et durable pour les projets au Maroc. Dimensions 1200 × 600 mm, épaisseurs de 40 à 200 mm (RD jusqu'à 5,40 m²·K/W).",
+      "badge": "Cloisons & bois",
+      "primary_image": "assets/images/products/laine-de-roche/rockwool-rocksono-base/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/rockwool-rocksono-base/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Rockwool RockSono Base",
+          "path": "data_produits/Laine de roche/fiche-technique-rocksono-base-fr.pdf"
+        }
+      ],
+      "advantages": [
+        "Excellent absorbant acoustique — αw jusqu'à 1,00",
+        "Incombustible Euroclasse A1 — résiste à plus de 1 000 °C",
+        "Conductivité thermique λ = 0,037 W/m·K",
+        "Panneau léger et souple — montage aisé et rapide",
+        "Pas de joint entre panneaux — aucun pont thermique",
+        "Matériau naturel entièrement recyclable et sain"
+      ],
+      "specifications": {
+        "Marque": "Rockwool",
+        "Type de produit": "Panneau léger et souple (cloisons & ossatures)",
+        "Masse volumique": "≈ 35 kg/m³",
+        "Conductivité thermique λ": "0,037 W/m·K",
+        "Classement au feu": "A1 — Incombustible (Euroclasse)",
+        "Absorption acoustique αw": "jusqu'à 1,00",
+        "Facteur de résistance à la vapeur μ": "≈ 1,0",
+        "Dimensions": "1200 × 600 mm",
+        "Épaisseurs disponibles": "40 à 200 mm",
+        "Résistance thermique RD": "1,05 à 5,40 m²·K/W",
+        "Certification": "Marquage CE (NBN EN 13501-1)"
+      },
+      "seo_keywords": "Rockwool RockSono Base Maroc, panneau laine de roche cloison, isolation acoustique cloison ossature bois, isolation phonique cloison métallique, absorption acoustique laine de roche, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rockwool-rocksate-duo-plus",
+      "slug": "rockwool-rocksate-duo-plus",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Rockwool Rocksate Duo Plus",
+      "brand": "Rockwool",
+      "short_description": "Panneau laine de roche double densité non revêtu pour les systèmes d'isolation thermique par l'extérieur (ITE / SATE) sous enduit.",
+      "full_description": "Le Rockwool Rocksate Duo Plus est un panneau en laine de roche double densité, non revêtu, dédié aux systèmes composites d'isolation thermique par l'extérieur des façades sous enduit (ITE / SATE), en construction neuve comme en réhabilitation. Sa face surdensifiée — repérée par un marquage à deux lignes verticales — assure une adhérence optimale de l'enduit et une excellente tenue mécanique, tandis que la couche interne de densité inférieure optimise les performances thermiques et l'adaptation au support. Avec une conductivité thermique λ = 0,035 W/m·K, une réaction au feu A1 incombustible et une résistance à la compression CS(10) de 15 kPa, il garantit durabilité, stabilité dimensionnelle et sécurité incendie. Chimiquement inerte, il ne favorise ni la corrosion ni le développement bactérien. Solution idéale pour les façades isolées sous enduit au Maroc exigeant performance énergétique et finition soignée. Dimensions 1200 × 600 mm, épaisseurs de 50 à 200 mm (R jusqu'à 5,70 m²·K/W).",
+      "badge": "ITE sous enduit",
+      "primary_image": "assets/images/products/laine-de-roche/rockwool-rocksate-duo-plus/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/rockwool-rocksate-duo-plus/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Rockwool Rocksate Duo Plus",
+          "path": "data_produits/Laine de roche/ft_rocksate-duo-plus_fr.pdf"
+        }
+      ],
+      "advantages": [
+        "Double densité : face dure pour l'enduit + âme isolante performante",
+        "Conductivité thermique λ = 0,035 W/m·K — haute performance",
+        "Incombustible A1 — ne contribue jamais à la propagation du feu",
+        "Résistance à la compression CS(10) 15 kPa — tenue mécanique",
+        "Stabilité dimensionnelle parfaite, même en teintes sombres",
+        "Chimiquement inerte — pas de corrosion ni de bactéries"
+      ],
+      "specifications": {
+        "Marque": "Rockwool",
+        "Type de produit": "Panneau double densité non revêtu (ITE sous enduit)",
+        "Masse volumique": "70 / 120 kg/m³ (double densité)",
+        "Conductivité thermique λ": "0,035 W/m·K",
+        "Classement au feu": "A1 — Incombustible (Euroclasse)",
+        "Dimensions": "1200 × 600 mm",
+        "Épaisseurs disponibles": "50 à 200 mm",
+        "Résistance thermique R": "1,40 à 5,70 m²·K/W",
+        "Résistance à la compression": "CS(10) 15 kPa",
+        "Charge ponctuelle": "PL(5) 200 N",
+        "Résistance à la traction": "TR 7,5 kPa"
+      },
+      "seo_keywords": "Rockwool Rocksate Duo Plus Maroc, panneau laine de roche double densité, isolation thermique par l'extérieur sous enduit SATE, ITE façade laine de roche, panneau isolant enduit incombustible, isolation thermique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rockwool-sonorock-plus",
+      "slug": "rockwool-sonorock-plus",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Rockwool Sonorock Plus",
+      "brand": "Rockwool",
+      "short_description": "Panneau semi-rigide de laine de roche non revêtu haute performance acoustique (λ = 0,033 W/m·K) pour cloisons et doublages intérieurs.",
+      "full_description": "Le Rockwool Sonorock Plus est un panneau semi-rigide de laine de roche non revêtu, optimisé pour le confort acoustique et thermique des cloisons intérieures verticales, des doublages (trasdossages) et des partitions horizontales sur faux-plafond. Fabriqué avec la technologie NyRock, il offre l'une des meilleures conductivités thermiques de sa catégorie (λ = 0,033 W/m·K) pour une densité de 50 kg/m³, garantissant une isolation thermique et phonique optimale. Classé Euroclasse A1, il assure une sécurité maximale en cas d'incendie. Sa bonne maniabilité et son adaptabilité facilitent une installation rapide et fiable. Certifié Eurofins Gold (faibles émissions) et doté d'une Déclaration Environnementale de Produit (DAP/EPD), il répond aux exigences de santé et de durabilité des projets au Maroc. Dimensions 1350 × 600 mm (ou 1350 × 400 mm), épaisseurs de 40 à 140 mm (R jusqu'à 4,20 m²·K/W).",
+      "badge": "Confort acoustique",
+      "primary_image": "assets/images/products/laine-de-roche/rockwool-sonorock-plus/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/rockwool-sonorock-plus/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Rockwool Sonorock Plus",
+          "path": "data_produits/Laine de roche/ft_sonorock-plus_es.pdf"
+        }
+      ],
+      "advantages": [
+        "Conductivité thermique λ = 0,033 W/m·K — parmi les meilleures du marché",
+        "Optimal pour l'isolation acoustique et thermique des cloisons",
+        "Incombustible Euroclasse A1 — sécurité incendie maximale",
+        "Technologie NyRock — densité maîtrisée et maniabilité",
+        "Certifié Eurofins Gold — faibles émissions, intérieur sain",
+        "Déclaration Environnementale de Produit (DAP/EPD) disponible"
+      ],
+      "specifications": {
+        "Marque": "Rockwool",
+        "Type de produit": "Panneau semi-rigide non revêtu (NyRock)",
+        "Masse volumique": "50 kg/m³",
+        "Conductivité thermique λ": "0,033 W/m·K",
+        "Classement au feu": "A1 — Incombustible (Euroclasse)",
+        "Dimensions": "1350 × 600 mm · 1350 × 400 mm",
+        "Épaisseurs disponibles": "40 à 140 mm",
+        "Résistance thermique R": "1,20 à 4,20 m²·K/W",
+        "Stabilité dimensionnelle": "T3",
+        "Certifications": "Eurofins Gold · DAP/EPD"
+      },
+      "seo_keywords": "Rockwool Sonorock Plus Maroc, panneau laine de roche acoustique, isolation phonique cloison doublage, laine de roche lambda 0.033, isolation acoustique faux plafond, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "volcalis-comfort-panneau",
+      "slug": "volcalis-comfort-panneau",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Volcalis Comfort Panneau",
+      "brand": "Volcalis",
+      "short_description": "Panneau de laine minérale compact pour systèmes de construction secs : cloisons, doublages de murs intérieurs et plafonds.",
+      "full_description": "Le Volcalis Comfort Panneau est un panneau de laine minérale compact, facile à manipuler et doux au toucher, conçu pour tous les systèmes de construction secs : cloisons, doublages (revêtements des murs par l'intérieur) et plafonds. Excellent isolant à la fois thermique et acoustique, il contribue au confort des bâtiments tout en réduisant la consommation d'énergie. Grâce à sa structure interne, il offre une absorption acoustique remarquable : coefficient αw de 0,85 (classe B) à 50 mm, atteignant 1,00 (classe A) à partir de 60 mm. Avec une conductivité thermique λ = 0,037 W/m·K et une réaction au feu A1 incombustible, il allie sécurité et performance. Issu d'un processus durable et 100 % recyclable, il représente une solution d'isolation thermique et acoustique écoresponsable idéale pour les travaux de construction et de réhabilitation au Maroc. Dimensions 1350 × 600 mm, épaisseurs de 50 à 120 mm (R jusqu'à 3,20 m²·K/W).",
+      "badge": "Polyvalent",
+      "primary_image": "assets/images/products/laine-de-roche/volcalis-comfort-panneau/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/volcalis-comfort-panneau/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Volcalis Comfort Panneau",
+          "path": "data_produits/Laine de roche/FicheTechnique_Volcalis_ComfortPanneau.pdf"
+        }
+      ],
+      "advantages": [
+        "Double performance thermique et acoustique en une seule solution",
+        "Absorption acoustique αw jusqu'à 1,00 (classe A dès 60 mm)",
+        "Conductivité thermique λ = 0,037 W/m·K",
+        "Incombustible A1 — ne conduit pas la chaleur, résiste au feu",
+        "Doux au toucher et facile à manipuler — pose confortable",
+        "100 % recyclable — processus de fabrication durable"
+      ],
+      "specifications": {
+        "Marque": "Volcalis",
+        "Type de produit": "Panneau de laine minérale (construction sèche)",
+        "Conductivité thermique λ": "0,037 W/m·K",
+        "Classement au feu": "A1 — Incombustible",
+        "Absorption acoustique αw": "0,85 (50 mm) → 1,00 (≥ 60 mm)",
+        "Dimensions": "1350 × 600 mm",
+        "Épaisseurs disponibles": "50 · 60 · 70 · 90 · 100 · 120 mm",
+        "Résistance thermique R": "1,35 à 3,20 m²·K/W",
+        "Tolérance d'épaisseur": "T2",
+        "Facteur de résistance à la vapeur μ": "1",
+        "Code de désignation": "MW-EN13162-T2-MU1-AW0,85-AFr5"
+      },
+      "seo_keywords": "Volcalis Comfort Panneau Maroc, panneau laine minérale cloison plafond, isolation acoustique doublage mur, isolation thermique construction sèche, panneau isolant incombustible A1, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "volcalis-comfort-rouleau",
+      "slug": "volcalis-comfort-rouleau",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Volcalis Comfort Rouleau",
+      "brand": "Volcalis",
+      "short_description": "Laine minérale souple en rouleau (largeurs 400 et 600 mm) pour l'isolation thermique et acoustique des systèmes de construction secs.",
+      "full_description": "Le Volcalis Comfort Rouleau est une laine minérale souple livrée en rouleau, disponible en largeurs de 400 et 600 mm, idéale pour l'isolation thermique et acoustique des systèmes de construction secs : cloisons, doublages de murs par l'intérieur et plafonds. Souple et doux au toucher, il se déroule, se découpe et se pose facilement, même dans les espaces difficiles d'accès, offrant un excellent rendement sur chantier. Grâce à sa structure interne, il assure une absorption acoustique élevée (αw de 0,85 à 1,00 selon l'épaisseur) et un très bon comportement thermique (λ = 0,037 W/m·K) qui réduit la consommation d'énergie du bâtiment. Classé A1 incombustible et 100 % recyclable, il constitue une solution d'isolation économique, performante et durable pour les projets de construction et de réhabilitation au Maroc. Épaisseurs de 50 à 90 mm (R jusqu'à 2,40 m²·K/W).",
+      "badge": "Économique",
+      "primary_image": "assets/images/products/laine-de-roche/volcalis-comfort-rouleau/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/volcalis-comfort-rouleau/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Volcalis Comfort Rouleau",
+          "path": "data_produits/Laine de roche/FicheTechnique_Volcalis_ComfortRouleau (1).pdf"
+        }
+      ],
+      "advantages": [
+        "Format rouleau — déroulage rapide et grand rendement au m²",
+        "Souple et facile à découper — pose simple même en accès difficile",
+        "Conductivité thermique λ = 0,037 W/m·K",
+        "Absorption acoustique αw jusqu'à 1,00",
+        "Incombustible A1 — sécurité incendie",
+        "Disponible en largeurs 400 et 600 mm · 100 % recyclable"
+      ],
+      "specifications": {
+        "Marque": "Volcalis",
+        "Type de produit": "Laine minérale souple en rouleau",
+        "Conductivité thermique λ": "0,037 W/m·K",
+        "Classement au feu": "A1 — Incombustible",
+        "Absorption acoustique αw": "0,85 (50 mm) → 1,00 (≥ 60 mm)",
+        "Largeurs disponibles": "400 mm · 600 mm",
+        "Épaisseurs disponibles": "50 · 60 · 70 · 90 mm",
+        "Résistance thermique R": "1,35 à 2,40 m²·K/W",
+        "Tolérance d'épaisseur": "T2",
+        "Facteur de résistance à la vapeur μ": "1"
+      },
+      "seo_keywords": "Volcalis Comfort Rouleau Maroc, rouleau laine minérale isolation, isolation thermique acoustique cloison plafond, rouleau laine de roche économique, isolant souple incombustible A1, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "terrawool-tw150",
+      "slug": "terrawool-tw150",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Terrawool TW150",
+      "brand": "Terrawool",
+      "short_description": "Panneau rigide de laine de roche haute densité (150 kg/m³) à haute résistance mécanique pour toitures et bardages.",
+      "full_description": "Le Terrawool TW150 est un panneau rigide en laine de roche haute densité (150 kg/m³) à haute résistance mécanique, conçu pour les applications en toiture de bâtiment et en bardage. Sa rigidité lui permet d'être appliqué directement sur dalle béton ou sur toiture métallique, avec fixations mécaniques préalables des panneaux. Incombustible classé A1 (TS EN 13501-1), il garantit une sécurité incendie totale tout en assurant une isolation thermique efficace (λ = 0,039 W/m·K à 10 °C). Non revêtu, stable et robuste, il offre une excellente planéité de surface et une tenue parfaite sous contrainte. Livré emballé sous film polyéthylène rétracté sur palettes bois, il facilite la manutention et le stockage sur chantier. Solution de référence pour l'isolation des toitures-terrasses et des bardages industriels au Maroc. Dimensions 1200 × 600 mm, épaisseurs de 30 à 150 mm (R jusqu'à 3,80 m²·K/W).",
+      "badge": "Toiture & bardage",
+      "primary_image": "assets/images/products/laine-de-roche/terrawool-tw150/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/terrawool-tw150/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Terrawool TW150",
+          "path": "data_produits/Laine de roche/FICHE TECHNIQUE TERRAWOOL TW150_250512_134055 (1).pdf"
+        }
+      ],
+      "advantages": [
+        "Haute densité 150 kg/m³ — haute résistance mécanique",
+        "Incombustible A1 — sécurité incendie totale (TS EN 13501-1)",
+        "Conductivité thermique λ = 0,039 W/m·K",
+        "Application sur dalle béton et toiture métallique",
+        "Excellente planéité et stabilité dimensionnelle",
+        "Conditionné sur palettes filmées — manutention facilitée"
+      ],
+      "specifications": {
+        "Marque": "Terrawool",
+        "Référence": "TW150 (TWE)",
+        "Type de produit": "Panneau rigide non revêtu (toiture & bardage)",
+        "Masse volumique": "150 kg/m³",
+        "Conductivité thermique λ (10 °C)": "0,039 W/m·K",
+        "Classement au feu": "A1 — Incombustible (TS EN 13501-1)",
+        "Dimensions": "1200 × 600 mm",
+        "Épaisseurs disponibles": "30 · 40 · 50 · 60 · 70 · 80 · 100 · 120 · 150 mm",
+        "Résistance thermique R": "0,75 à 3,80 m²·K/W",
+        "Tolérance d'épaisseur": "T3",
+        "Norme": "TS EN 13162"
+      },
+      "seo_keywords": "Terrawool TW150 Maroc, panneau rigide laine de roche toiture, isolation toiture terrasse laine de roche, panneau bardage haute densité, isolation thermique toiture incombustible A1, isolation thermique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "glasrock-panneau-kraft",
+      "slug": "glasrock-panneau-kraft",
+      "category_id": "laine-de-roche",
+      "category_name": "Laine de Roche",
+      "product_name": "Glasrock Panneau Kraft",
+      "brand": "Glasrock",
+      "short_description": "Panneau de laine de roche semi-rigide revêtu kraft (conforme ASTM C612) pour l'isolation thermique et le calorifugeage industriel.",
+      "full_description": "Le Glasrock Panneau Kraft est un panneau de laine de roche semi-rigide revêtu d'un papier kraft (kraft paper), conforme à la norme américaine ASTM C612, destiné à l'isolation thermique des bâtiments et au calorifugeage industriel. D'une densité de 50 kg/m³, il offre une conductivité thermique de 0,035 W/m·K à 24 °C et conserve d'excellentes performances à haute température (0,108 W/m·K à 371 °C), ce qui le rend adapté aux équipements et parois chaudes. Non combustible (ASTM E136), il résiste au feu avec un indice de propagation de flamme et de développement de fumée très faibles. Semi-rigide et résistant à la corrosion, il absorbe moins de 5 % d'humidité, garantissant la stabilité de ses performances dans le temps. Solution robuste pour l'isolation thermique et acoustique des murs, équipements industriels et installations techniques au Maroc. Dimensions 1200 × 600 mm, épaisseur type 50 mm.",
+      "badge": "Industriel",
+      "primary_image": "assets/images/products/laine-de-roche/glasrock-panneau-kraft/main.png",
+      "images": [
+        "assets/images/products/laine-de-roche/glasrock-panneau-kraft/main.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Glasrock Panneau Kraft",
+          "path": "data_produits/Laine de roche/fiche technique panneaux kraft glasse rock.pdf"
+        }
+      ],
+      "advantages": [
+        "Conforme ASTM C612 — qualité industrielle certifiée",
+        "Performances maintenues à haute température (jusqu'à 371 °C)",
+        "Non combustible ASTM E136 — sécurité incendie",
+        "Revêtement kraft — pare-vapeur et mise en œuvre facilitée",
+        "Absorption d'humidité < 5 % — performances stables dans le temps",
+        "Semi-rigide et résistant à la corrosion"
+      ],
+      "specifications": {
+        "Marque": "Glasrock",
+        "Type de produit": "Panneau semi-rigide revêtu kraft (ASTM C612)",
+        "Masse volumique": "50 kg/m³",
+        "Conductivité thermique λ (24 °C)": "0,035 W/m·K",
+        "Conductivité thermique λ (371 °C)": "0,108 W/m·K",
+        "Classement au feu": "Non combustible (ASTM E136)",
+        "Dimensions": "1200 × 600 mm",
+        "Épaisseur type": "50 mm",
+        "Absorption de vapeur d'eau": "< 5 % (1,5 % mesuré)",
+        "Rigidité": "Semi-rigide",
+        "Norme": "ASTM C612 · C177/C518 · E136"
+      },
+      "seo_keywords": "Glasrock Panneau Kraft Maroc, panneau laine de roche kraft ASTM C612, isolation thermique industrielle laine de roche, calorifugeage panneau kraft, panneau isolant non combustible, isolation thermique et acoustique Maroc, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "porte-acoustique-rw35",
+      "slug": "porte-acoustique-rw35",
+      "category_id": "portes-isolees",
+      "category_name": "Portes Isolées",
+      "product_name": "Porte Acoustique Rw 35 dB",
+      "brand": "Isolsolutions",
+      "short_description": "Porte acoustique standard Rw 35 dB — solution phonique performante pour bureaux et espaces tertiaires.",
+      "full_description": "La Porte Acoustique Rw 35 dB d'Isolsolutions est la solution de référence pour les projets nécessitant une isolation phonique standard mais efficace. Son âme en panneaux multicouches (laine minérale + plaques haute densité) garantit un affaiblissement acoustique Rw = 35 dB certifié. Son huisserie métallique avec joints périphériques compressibles et son seuil automatique rétractable assurent une étanchéité acoustique optimale à l'ouverture comme à la fermeture. Finition laquée RAL au choix.",
+      "badge": "Standard",
+      "primary_image": "assets/images/solution-images/portes-isolees.png",
+      "images": [
+        "assets/images/solution-images/portes-isolees.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Affaiblissement Rw = 35 dB — certification acoustique",
+        "Seuil automatique rétractable — étanchéité parfaite",
+        "Joints périphériques compressibles intégrés",
+        "Finition laquée RAL — personnalisable",
+        "Âme multicouche laine minérale + plaques HD",
+        "Norme EN ISO 10140 — conformité certifiée"
+      ],
+      "specifications": {
+        "Indice d'affaiblissement Rw": "35 dB",
+        "Épaisseur de la porte": "54 mm",
+        "Huisserie": "Métallique",
+        "Finition": "Laquée RAL",
+        "Seuil": "Automatique rétractable",
+        "Norme de test": "EN ISO 10140"
+      },
+      "seo_keywords": "porte acoustique Rw 35 dB, porte phonique bureau, porte isolation sonore, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "porte-acoustique-rw42",
+      "slug": "porte-acoustique-rw42",
+      "category_id": "portes-isolees",
+      "category_name": "Portes Isolées",
+      "product_name": "Porte Acoustique Rw 42 dB",
+      "brand": "Isolsolutions",
+      "short_description": "Porte haute performance Rw 42 dB — locaux techniques, salles de musique, hôpitaux.",
+      "full_description": "La Porte Acoustique Rw 42 dB d'Isolsolutions est conçue pour les environnements nécessitant une isolation phonique haute performance. Sa double paroi avec âme multicouche renforcée et ses triple joints périphériques garantissent un affaiblissement acoustique exceptionnel. Le seuil automatique à double lèvre assure une étanchéité parfaite. Idéale pour les locaux techniques, salles de musique, studios de répétition et établissements de santé. Disponible en simple ou double vantail.",
+      "badge": "Performance",
+      "primary_image": "assets/images/solution-images/portes-isolees.png",
+      "images": [
+        "assets/images/solution-images/portes-isolees.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Affaiblissement Rw = 42 dB — haute performance",
+        "Triple joints périphériques — étanchéité renforcée",
+        "Seuil automatique double lèvre",
+        "Simple ou double vantail selon besoin",
+        "Idéale studios, hôpitaux, locaux techniques",
+        "Certification EN ISO 10140"
+      ],
+      "specifications": {
+        "Indice d'affaiblissement Rw": "42 dB",
+        "Épaisseur de la porte": "68 mm",
+        "Joints": "Triple périphérique",
+        "Configuration": "Simple ou double vantail",
+        "Norme de test": "EN ISO 10140"
+      },
+      "seo_keywords": "porte acoustique Rw 42 dB haute performance, porte phonique studio hôpital, isolation sonore locaux techniques, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "porte-acoustique-rw50",
+      "slug": "porte-acoustique-rw50",
+      "category_id": "portes-isolees",
+      "category_name": "Portes Isolées",
+      "product_name": "Porte Acoustique Rw 50 dB — Ultra Premium",
+      "brand": "Isolsolutions",
+      "short_description": "Isolation phonique maximum Rw 50 dB — studios d'enregistrement, audiométrie, chambres anéchoïques.",
+      "full_description": "La Porte Acoustique Ultra-Premium Rw 50 dB d'Isolsolutions représente le summum de l'isolation phonique disponible sur le marché. Sa construction massive en composite multi-matériaux, ses quadruple joints d'étanchéité et son seuil motorisé garantissent une barrière sonique quasi totale. Destinée exclusivement aux environnements à exigences critiques : studios d'enregistrement professionnels, salles d'audiométrie médicale, chambres anéchoïques et laboratoires acoustiques. Fabriquée sur mesure.",
+      "badge": "Ultra Premium",
+      "primary_image": "assets/images/solution-images/portes-isolees.png",
+      "images": [
+        "assets/images/solution-images/portes-isolees.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Affaiblissement Rw = 50 dB — performance maximale",
+        "Construction composite massive multi-matériaux",
+        "Quadruple joints d'étanchéité",
+        "Seuil motorisé — étanchéité automatique",
+        "Studios d'enregistrement et audiométrie médicale",
+        "Fabrication sur mesure uniquement"
+      ],
+      "specifications": {
+        "Indice d'affaiblissement Rw": "50 dB",
+        "Épaisseur de la porte": "90 mm",
+        "Poids approximatif": "~120 kg/m²",
+        "Seuil": "Motorisé",
+        "Norme de test": "EN ISO 10140",
+        "Fabrication": "Sur mesure"
+      },
+      "seo_keywords": "porte acoustique Rw 50 dB ultra premium, porte studio enregistrement, isolation phonique maximale, chambre anéchoïque, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "porte-coupe-feu-ei60",
+      "slug": "porte-coupe-feu-ei60",
+      "category_id": "portes-isolees",
+      "category_name": "Portes Isolées",
+      "product_name": "Porte Coupe-Feu EI60 + Acoustique Rw 38 dB",
+      "brand": "Isolsolutions",
+      "short_description": "Double protection : coupe-feu EI60 certifié et acoustique Rw 38 dB — conformité réglementation incendie.",
+      "full_description": "La Porte Coupe-Feu EI60 Acoustique d'Isolsolutions combine deux protections essentielles : une résistance au feu de 60 minutes (EI60) et une isolation acoustique Rw 38 dB. Son âme en laine de roche haute densité entre panneaux acier garantit l'efficacité coupe-feu, tandis que les joints périphériques intumescents assurent l'étanchéité aux fumées. Le ferme-porte hydraulique intégré assure la fermeture automatique. Certifiée EN 1634-1 et EN ISO 10140.",
+      "badge": "Sécurité",
+      "primary_image": "assets/images/solution-images/portes-isolees.png",
+      "images": [
+        "assets/images/solution-images/portes-isolees.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Coupe-feu EI60 — 60 minutes de protection",
+        "Isolation acoustique Rw = 38 dB",
+        "Ferme-porte hydraulique intégré",
+        "Joints intumescents — étanchéité aux fumées",
+        "Âme laine de roche haute densité",
+        "Double certification EN 1634-1 / EN ISO 10140"
+      ],
+      "specifications": {
+        "Résistance au feu": "EI60",
+        "Indice d'affaiblissement Rw": "38 dB",
+        "Épaisseur": "72 mm",
+        "Normes": "EN 1634-1 / EN ISO 10140",
+        "Ferme-porte": "Hydraulique intégré"
+      },
+      "seo_keywords": "porte coupe-feu EI60 acoustique, porte coupe-feu phonique, protection incendie isolation sonore, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "porte-coulissante-acoustique",
+      "slug": "porte-coulissante-acoustique",
+      "category_id": "portes-isolees",
+      "category_name": "Portes Isolées",
+      "product_name": "Porte Coulissante Acoustique Rw 32 dB",
+      "brand": "Isolsolutions",
+      "short_description": "Porte coulissante gain de place avec isolation phonique Rw 32 dB — hôtels, bureaux, cloisons mobiles.",
+      "full_description": "La Porte Coulissante Acoustique Rw 32 dB d'Isolsolutions est la solution idéale pour les espaces où le gain de place est primordial sans compromis sur l'isolation phonique. Son système de compression latérale et inférieure automatique garantit une étanchéité acoustique optimale en position fermée. Le rail supérieur en aluminium assure un glissement silencieux. Disponible en finitions bois, laqué ou verre. Parfaite pour hôtels, bureaux modernes et cloisons mobiles.",
+      "badge": "Design",
+      "primary_image": "assets/images/solution-images/portes-isolees.png",
+      "images": [
+        "assets/images/solution-images/portes-isolees.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Coulissante — gain de place optimal",
+        "Rw = 32 dB — isolation phonique certifiée",
+        "Compression automatique latérale et inférieure",
+        "Finitions multiples : bois, laqué, verre",
+        "Rail aluminium anodisé — glissement silencieux",
+        "Idéale hôtels, bureaux et cloisons mobiles"
+      ],
+      "specifications": {
+        "Indice d'affaiblissement Rw": "32 dB",
+        "Type": "Coulissante",
+        "Rail": "Aluminium anodisé",
+        "Finitions": "Bois, Laqué, Verre",
+        "Largeur maximale": "1400 mm"
+      },
+      "seo_keywords": "porte coulissante acoustique Rw 32, porte phonique coulissante hôtel bureau, cloison mobile acoustique, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-mousse-melamine",
+      "slug": "revetement-mousse-melamine",
+      "category_id": "revetements-techniques",
+      "category_name": "Revêtements Techniques",
+      "product_name": "Mousse Mélamine Acoustique",
+      "brand": "Isolsolutions",
+      "short_description": "Mousse légère ultra-performante — absorption large bande pour habillage de machines et capotages.",
+      "full_description": "La Mousse Mélamine Acoustique d'Isolsolutions est un matériau d'absorption sonore ultra-performant à cellules ouvertes, d'une légèreté exceptionnelle (8–11 kg/m³). Elle offre une absorption acoustique αw = 0.95 à 50 mm d'épaisseur sur une large bande de fréquences. Son classement au feu B-s1,d0 et sa plage de température de -40°C à +200°C en font la solution idéale pour l'habillage intérieur de machines industrielles, capotages acoustiques et conduits techniques.",
+      "badge": "Léger",
+      "primary_image": "data_produits/revetement murale/picture.png",
+      "images": [
+        "data_produits/revetement murale/picture.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Ultra légère 8–11 kg/m³ — n'alourdit pas les structures",
+        "Absorption αw = 0.95 (50mm) — large bande fréquences",
+        "Classement feu B-s1,d0 — sécurité garantie",
+        "Plage de service : -40°C à +200°C",
+        "Facile à découper et à coller",
+        "Idéale capotages machines et conduits"
+      ],
+      "specifications": {
+        "Densité": "8–11 kg/m³",
+        "Coefficient d'absorption αw (50mm)": "0.95",
+        "Classement au feu": "B-s1,d0",
+        "Température de service": "-40°C à +200°C",
+        "Épaisseurs disponibles": "20 – 100 mm"
+      },
+      "seo_keywords": "mousse mélamine acoustique, absorption sonore large bande, habillage machine acoustique, capotage phonique, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-bitumineux",
+      "slug": "revetement-bitumineux",
+      "category_id": "revetements-techniques",
+      "category_name": "Revêtements Techniques",
+      "product_name": "Membrane Bitumineuse Anti-Vibration",
+      "brand": "Isolsolutions",
+      "short_description": "Membrane autoadhésive en bitume polymère — amortissement vibratoire et bruits solidiens.",
+      "full_description": "La Membrane Bitumineuse Anti-Vibration d'Isolsolutions est une membrane autoadhésive en bitume polymère chargé de minéraux à haute masse surfacique. Elle réduit efficacement les vibrations et les bruits structuraux (bruits solidiens) par simple application sur les surfaces métalliques. Idéale pour les carrosseries industrielles, machines vibrantes, cloisons métalliques et planchers de véhicules. Application à température ambiante, sans outillage spécifique.",
+      "badge": "Industrie",
+      "primary_image": "data_produits/revetement murale/picture.png",
+      "images": [
+        "data_produits/revetement murale/picture.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Amortissement vibratoire très efficace",
+        "Application autoadhésive — pose rapide et simple",
+        "Réduit les bruits solidiens et les vibrations",
+        "Compatible surfaces métalliques, acier, alu",
+        "Masse surfacique élevée 4–8 kg/m²",
+        "Découpe facile au cutter"
+      ],
+      "specifications": {
+        "Masse surfacique": "4–8 kg/m²",
+        "Épaisseur": "2–4 mm",
+        "Type d'adhésif": "Autoadhésif",
+        "Température de service": "-20°C à +100°C",
+        "Application": "Surfaces métalliques"
+      },
+      "seo_keywords": "membrane bitumineuse anti-vibration, amortisseur vibrations machine, bruit solidien, Isolsolutions Maroc isolation",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-composite-alu",
+      "slug": "revetement-composite-alu",
+      "category_id": "revetements-techniques",
+      "category_name": "Revêtements Techniques",
+      "product_name": "Panneau Composite Acoustique Aluminium",
+      "brand": "Isolsolutions",
+      "short_description": "Panneau sandwich alu/mousse/alu pour groupes électrogènes, HVAC et murs antibruit extérieurs.",
+      "full_description": "Le Panneau Composite Acoustique Aluminium d'Isolsolutions est un panneau sandwich aluminium/mousse acoustique/aluminium conçu pour les environnements extérieurs et les applications à fortes contraintes. Sa face extérieure en aluminium laqué résiste aux intempéries, aux UV et à la corrosion. Idéal pour l'habillage de groupes électrogènes, centrales HVAC, salles de machines et murs antibruit industriels. Absorption acoustique αw 0.75–0.90 selon configuration.",
+      "badge": "Haute performance",
+      "primary_image": "data_produits/revetement murale/picture.png",
+      "images": [
+        "data_produits/revetement murale/picture.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Panneaux Sandwich (Bardage)",
+          "path": "data_produits/Panneaux sandwish/FTB 1000 Bardage_250925_104531.pdf"
+        },
+        {
+          "label": "Fiche technique Isolation Sonore Panneaux",
+          "path": "data_produits/Panneaux sandwish/FTB Painel 120 MM e superiores - Ensaio Isolamento Sonoro .pdf"
+        }
+      ],
+      "advantages": [
+        "Structure sandwich alu/mousse/alu — double protection",
+        "Résistant aux intempéries, UV et corrosion",
+        "Absorption αw 0.75–0.90 — haute efficacité",
+        "Idéal groupes électrogènes et centrales HVAC",
+        "Finition aluminium laqué durable",
+        "Assemblage par rivets — montage rapide"
+      ],
+      "specifications": {
+        "Épaisseur totale": "30–80 mm",
+        "Épaisseur aluminium": "0.8–1.5 mm",
+        "Coefficient d'absorption αw": "0.75–0.90",
+        "Résistance": "UV, corrosion, intempéries"
+      },
+      "seo_keywords": "panneau composite acoustique aluminium, mur antibruit industriel, habillage groupe électrogène, panneau sandwich phonique, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-mousse-pu",
+      "slug": "revetement-mousse-pu",
+      "category_id": "revetements-techniques",
+      "category_name": "Revêtements Techniques",
+      "product_name": "Mousse Polyuréthane Pyramidale — Studio",
+      "brand": "Isolsolutions",
+      "short_description": "Mousse PU profilée pyramidale pour correction acoustique — studios, home-cinémas et salles musique.",
+      "full_description": "La Mousse Polyuréthane Pyramidale d'Isolsolutions est conçue pour la correction acoustique intérieure des espaces dédiés au son. Son profil pyramidal (nid d'abeille) absorbe progressivement les fréquences moyennes et hautes, éliminant les réflexions parasites et les effets d'écho. En finition gris anthracite élégante, elle s'intègre dans les studios d'enregistrement, home-cinémas, salles de musique et espaces multimédia. Pose par collage en néoprène.",
+      "badge": "Studio",
+      "primary_image": "data_produits/revetement murale/picture.png",
+      "images": [
+        "data_produits/revetement murale/picture.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Profil pyramidal — absorption progressive",
+        "Correction acoustique des fréquences moyennes/hautes",
+        "Élimine les échos et réflexions parasites",
+        "Finition gris anthracite — esthétique studio",
+        "Studios, home-cinémas et salles musique",
+        "Pose par collage — installation simple"
+      ],
+      "specifications": {
+        "Densité": "30 kg/m³",
+        "Profil": "Pyramidal 50 mm",
+        "Coefficient d'absorption αw (50mm)": "0.65",
+        "Dimensions": "1000 × 1000 mm",
+        "Couleur": "Gris anthracite"
+      },
+      "seo_keywords": "mousse pyramidale studio, correction acoustique home cinéma, mousse PU acoustique, traitement phonique studio, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-fibre-polyester",
+      "slug": "revetement-fibre-polyester",
+      "category_id": "revetements-techniques",
+      "category_name": "Revêtements Techniques",
+      "product_name": "Panneau Fibre Polyester PET Recyclé",
+      "brand": "Isolsolutions",
+      "short_description": "Panneau acoustique 100% PET recyclé — 12 coloris, sans formaldéhyde, idéal espaces éducatifs.",
+      "full_description": "Le Panneau Fibre Polyester PET Recyclé d'Isolsolutions est la solution acoustique écoresponsable par excellence. Fabriqué à 100% à partir de bouteilles PET recyclées, il ne contient ni formaldéhyde, ni irritants chimiques. Son absorption acoustique αw = 0.80 à 50 mm en fait un matériau performant et sain. Disponible en 12 coloris pour s'adapter à tous les projets de design intérieur. Classement feu B-s1,d0. Idéal pour les espaces éducatifs, crèches, bureaux et lieux de vie.",
+      "badge": "Éco",
+      "primary_image": "data_produits/revetement murale/PET 办公隔断 1.png",
+      "images": [
+        "data_produits/revetement murale/PET 办公隔断 1.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Panneaux Muraux Isolsolutions",
+          "path": "data_produits/revetement murale/Panneaux Muraux IsolMaroc (Technical Datasheet).pdf"
+        }
+      ],
+      "advantages": [
+        "100% PET recyclé — démarche environnementale",
+        "Sans formaldéhyde — sain pour les utilisateurs",
+        "12 coloris disponibles — design et personnalisation",
+        "Classement feu B-s1,d0 — conformité ERP",
+        "Léger et facile à découper et à poser",
+        "Idéal crèches, écoles, bureaux, lieux de vie"
+      ],
+      "specifications": {
+        "Matière": "Fibre PET 100% recyclée",
+        "Densité": "40 kg/m³",
+        "Coefficient d'absorption αw (50mm)": "0.80",
+        "Épaisseurs disponibles": "9–50 mm",
+        "Coloris": "12 teintes disponibles",
+        "Classement au feu": "B-s1,d0"
+      },
+      "seo_keywords": "panneau PET recyclé acoustique, isolation phonique écologique, panneau acoustique coloré bureau école, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "capotage-acoustique-compresseur",
+      "slug": "capotage-acoustique-compresseur",
+      "category_id": "isolation-industrielle",
+      "category_name": "Isolation Machines Industrielles",
+      "product_name": "Capotage Acoustique pour Compresseur",
+      "brand": "Isolsolutions",
+      "short_description": "Capotage sur mesure pour compresseurs industriels — réduction sonore de 15 à 25 dB(A).",
+      "full_description": "Le Capotage Acoustique pour Compresseur d'Isolsolutions est une solution sur mesure en panneaux sandwich acier/laine de roche, conçue pour réduire le bruit des compresseurs d'air industriels de 15 à 25 dB(A). Les panneaux sont démontables pour permettre la maintenance sans outil spécial. La ventilation intégrée avec silencieux maintient le fonctionnement optimal de la machine tout en contrôlant les émissions sonores. Traitement anti-corrosion en finition standard.",
+      "badge": "Sur mesure",
+      "primary_image": "assets/images/solution-images/isolation-machines.png",
+      "images": [
+        "assets/images/solution-images/isolation-machines.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Réduction sonore de 15–25 dB(A) mesurée",
+        "Panneaux démontables — maintenance facilitée",
+        "Ventilation intégrée avec silencieux",
+        "Traitement anti-corrosion en standard",
+        "Fabriqué sur mesure selon dimensions machine",
+        "Panneaux sandwich acier/laine de roche"
+      ],
+      "specifications": {
+        "Réduction sonore": "15–25 dB(A)",
+        "Panneaux": "Acier / Laine de Roche sandwich",
+        "Ventilation": "Silencieux intégré",
+        "Traitement de surface": "Anti-corrosion",
+        "Fabrication": "Sur mesure"
+      },
+      "seo_keywords": "capotage acoustique compresseur, réduction bruit industriel, isolation machine compresseur, Isolsolutions Maroc industrie",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "ecran-acoustique-industriel",
+      "slug": "ecran-acoustique-industriel",
+      "category_id": "isolation-industrielle",
+      "category_name": "Isolation Machines Industrielles",
+      "product_name": "Écran Acoustique Modulaire Industriel",
+      "brand": "Isolsolutions",
+      "short_description": "Écran autoportant modulaire — séparation de zones bruyantes, réduction jusqu'à 20 dB(A).",
+      "full_description": "L'Écran Acoustique Modulaire Industriel d'Isolsolutions est un système autoportant de séparation des zones bruyantes en industrie. Ses panneaux en acier galvanisé / laine de roche 80 mm avec face absorbante perforée côté source de bruit réduisent les niveaux sonores jusqu'à 20 dB(A). Disponible en hauteurs standard de 2 à 4 m avec assemblage par boulonnage rapide, il peut être reconfigurée selon l'évolution des installations.",
+      "badge": "Modulaire",
+      "primary_image": "assets/images/solution-images/isolation-machines.png",
+      "images": [
+        "assets/images/solution-images/isolation-machines.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Autoportant et modulaire — reconfigurable",
+        "Réduction jusqu'à 20 dB(A)",
+        "Face absorbante perforée côté source de bruit",
+        "Hauteur de 2 à 4 m selon besoin",
+        "Assemblage rapide par boulonnage",
+        "Acier galvanisé — durabilité industrielle"
+      ],
+      "specifications": {
+        "Réduction sonore": "Jusqu'à 20 dB(A)",
+        "Hauteurs disponibles": "2–4 m",
+        "Panneau": "Acier galvanisé + Laine de roche 80mm",
+        "Montage": "Boulonnage rapide"
+      },
+      "seo_keywords": "écran acoustique industriel modulaire, séparation zones bruyantes usine, cloison antibruit industrie, Isolsolutions",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "matelas-isolation-tuyauterie",
+      "slug": "matelas-isolation-tuyauterie",
+      "category_id": "isolation-industrielle",
+      "category_name": "Isolation Machines Industrielles",
+      "product_name": "Matelas Isolant Démontable Tuyauteries HT",
+      "brand": "Isolsolutions",
+      "short_description": "Matelas démontable pour tuyauteries et vannes haute température jusqu'à 650°C — réutilisable.",
+      "full_description": "Le Matelas Isolant Démontable pour Tuyauteries Haute Température d'Isolsolutions est la solution d'isolation thermique réutilisable pour les réseaux industriels à haute température. Avec une résistance jusqu'à 650°C, il protège efficacement les tuyauteries, vannes et équipements des pertes thermiques. Son enveloppe en tissu de verre siliconé et sa fixation par bandes velcro inox permettent un démontage rapide lors des opérations de maintenance, sans destruction de l'isolation.",
+      "badge": "Haute temp.",
+      "primary_image": "assets/images/solution-images/isolation-machines.png",
+      "images": [
+        "assets/images/solution-images/isolation-machines.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Résistance thermique jusqu'à 650°C",
+        "Démontable et réutilisable — économie sur le long terme",
+        "Âme en laine de roche ou fibre céramique",
+        "Enveloppe tissu de verre siliconé résistant",
+        "Fixation velcro inox — démontage rapide",
+        "Maintenance sans destruction de l'isolation"
+      ],
+      "specifications": {
+        "Température maximale": "650°C",
+        "Âme isolante": "Laine de roche ou fibre céramique",
+        "Enveloppe": "Tissu de verre siliconé",
+        "Fixation": "Velcro inox"
+      },
+      "seo_keywords": "matelas isolant tuyauterie haute température, isolation démontable HT, calorifuge démontable vanne, Isolsolutions industrie",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "silencieux-ventilation",
+      "slug": "silencieux-ventilation",
+      "category_id": "isolation-industrielle",
+      "category_name": "Isolation Machines Industrielles",
+      "product_name": "Silencieux à Baffles pour Ventilation",
+      "brand": "Isolsolutions",
+      "short_description": "Silencieux à baffles parallèles pour gaines CVC — atténuation 15 à 35 dB selon fréquence.",
+      "full_description": "Le Silencieux à Baffles pour Ventilation d'Isolsolutions est conçu pour réduire les nuisances sonores générées par les installations de ventilation et climatisation (CVC). Ses baffles en laine minérale haute densité enveloppée de tôle perforée offrent une atténuation de 15 à 35 dB selon la fréquence et la longueur du silencieux. Construction en acier galvanisé. Disponible en sections rectangulaires et circulaires sur mesure. Faible perte de charge.",
+      "badge": "HVAC",
+      "primary_image": "assets/images/solution-images/isolation-machines.png",
+      "images": [
+        "assets/images/solution-images/isolation-machines.png"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche technique Toiture Acoustique Laine de Roche",
+          "path": "data_produits/Panneaux sandwish/TOITURE ACOUSTIQUE - LAINE DE ROCHE.pdf"
+        }
+      ],
+      "advantages": [
+        "Atténuation 15–35 dB selon fréquence",
+        "Baffles en laine minérale HD + tôle perforée",
+        "Sections rectangulaires et circulaires disponibles",
+        "Construction acier galvanisé — durabilité",
+        "Faible perte de charge aéraulique",
+        "Dimensions sur mesure selon réseau CVC"
+      ],
+      "specifications": {
+        "Atténuation sonore": "15–35 dB",
+        "Baffles": "Laine Minérale HD + tôle perforée",
+        "Construction": "Acier galvanisé",
+        "Sections": "Rectangulaire / Circulaire",
+        "Fabrication": "Sur mesure"
+      },
+      "seo_keywords": "silencieux ventilation CVC, atténuation bruit gaine ventilation, silencieux à baffles acoustique, Isolsolutions Maroc HVAC",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "revetement-anti-vibratoire",
+      "slug": "revetement-anti-vibratoire",
+      "category_id": "isolation-industrielle",
+      "category_name": "Isolation Machines Industrielles",
+      "product_name": "Plots Anti-Vibratoires Machines",
+      "brand": "Isolsolutions",
+      "short_description": "Plots élastomères pour découplage vibratoire — charge unitaire de 50 à 5000 kg par plot.",
+      "full_description": "Les Plots Anti-Vibratoires Machines d'Isolsolutions sont des éléments de découplage vibratoire en élastomère technique, conçus pour isoler les machines industrielles des structures porteuses. Avec une charge unitaire de 50 à 5000 kg par plot et une fréquence de coupure de 8–15 Hz, ils absorbent efficacement les vibrations transmises par les machines rotatives, les groupes électrogènes et les compresseurs. Résistants aux huiles et solvants industriels.",
+      "badge": "Vibration",
+      "primary_image": "assets/images/solution-images/isolation-machines.png",
+      "images": [
+        "assets/images/solution-images/isolation-machines.png"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Charge unitaire 50–5000 kg par plot",
+        "Fréquence de coupure efficace : 8–15 Hz",
+        "Résistant aux huiles et solvants industriels",
+        "Installation simple par boulonnage",
+        "Élastomère technique haute durabilité",
+        "Réduit les vibrations transmises aux structures"
+      ],
+      "specifications": {
+        "Charge unitaire": "50–5000 kg/plot",
+        "Fréquence de coupure": "8–15 Hz",
+        "Matière": "Élastomère technique",
+        "Résistance chimique": "Huiles et solvants",
+        "Fixation": "Boulonnage"
+      },
+      "seo_keywords": "plots anti-vibratoires machine, découplage vibratoire industriel, isolation vibrations compresseur, Isolsolutions Maroc",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "insulation-pins-autoadhesifs",
+      "slug": "insulation-pins-autoadhesifs",
+      "category_id": "produits-sur-commande",
+      "category_name": "Produits sur Commande",
+      "product_name": "Insulation Pins Autoadhésifs",
+      "brand": "Isolsolutions",
+      "short_description": "Clous de fixation autoadhésifs en acier galvanisé — fixation rapide de panneaux isolants sur surfaces métalliques.",
+      "full_description": "Les Insulation Pins Autoadhésifs d'Isolsolutions sont des clous de fixation en acier galvanisé à base autoadhésive haute performance, conçus pour la fixation de panneaux et matelas isolants sur surfaces métalliques sans perçage ni soudure. Disponibles en longueurs de 25 à 150 mm pour s'adapter à toutes les épaisseurs d'isolant. Conditionnement par boîte de 1000 pièces. Produit importé depuis nos partenaires européens.",
+      "badge": "Fixation",
+      "primary_image": "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg",
+      "images": [
+        "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg"
+      ],
+      "technical_documents": [
+        {
+          "label": "Fiche Effisus Vap-X",
+          "path": "data_produits/Pare-vapeur et Pare-pluie/Effisus vap x.pdf"
+        },
+        {
+          "label": "TDS 2Bond DS (Adhésif double face)",
+          "path": "data_produits/Pare-vapeur et Pare-pluie/TDS 13.V02_2Bond DS_EN.pdf"
+        }
+      ],
+      "advantages": [
+        "Base autoadhésive haute performance — sans perçage",
+        "Acier galvanisé — résistance à la corrosion",
+        "Longueurs de 25 à 150 mm disponibles",
+        "Conditionnement de 1000 pcs/boîte",
+        "Compatible toutes surfaces métalliques",
+        "Importation Europe — qualité certifiée"
+      ],
+      "specifications": {
+        "Matière": "Acier galvanisé",
+        "Longueurs disponibles": "25–150 mm",
+        "Conditionnement": "1000 pièces / boîte",
+        "Base": "Autoadhésive haute performance"
+      },
+      "seo_keywords": "insulation pins autoadhésifs, clous fixation isolant métallique, fixation rapide panneau isolant, Isolsolutions accessoires",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "rondelles-fixation-isolant",
+      "slug": "rondelles-fixation-isolant",
+      "category_id": "produits-sur-commande",
+      "category_name": "Produits sur Commande",
+      "product_name": "Rondelles de Fixation Isolant Ø 36 mm",
+      "brand": "Isolsolutions",
+      "short_description": "Rondelles de maintien en acier galvanisé Ø 36 mm — clippage rapide sur insulation pins.",
+      "full_description": "Les Rondelles de Fixation Isolant Ø 36 mm d'Isolsolutions sont des accessoires essentiels pour le maintien des matelas et panneaux isolants sur les insulation pins. Leur conception en acier galvanisé et leur système de clippage rapide garantissent une fixation sécurisée et durable. Compatible avec tous types de pins standards du marché. Conditionnement par boîte de 500 pièces.",
+      "badge": "Accessoire",
+      "primary_image": "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg",
+      "images": [
+        "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg"
+      ],
+      "technical_documents": [
+        {
+          "label": "TDS 2Adjoin DF (Accessoire adhésif)",
+          "path": "data_produits/Pare-vapeur et Pare-pluie/TDS-13.V01_2Adjoin-DF_EN-1.pdf"
+        }
+      ],
+      "advantages": [
+        "Diamètre 36 mm — maintien optimal de l'isolant",
+        "Clippage rapide et sécurisé",
+        "Acier galvanisé — durabilité garantie",
+        "Compatible pins standards universels",
+        "500 pièces par boîte",
+        "Maintien ferme même en haute température"
+      ],
+      "specifications": {
+        "Diamètre": "36 mm",
+        "Matière": "Acier galvanisé",
+        "Conditionnement": "500 pièces / boîte",
+        "Type": "Clippage rapide"
+      },
+      "seo_keywords": "rondelles fixation isolant, clips insulation pins, fixation matelas isolant, Isolsolutions accessoires isolation",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "bande-alu-adhesive",
+      "slug": "bande-alu-adhesive",
+      "category_id": "produits-sur-commande",
+      "category_name": "Produits sur Commande",
+      "product_name": "Bande Aluminium Adhésive 50 µm",
+      "brand": "Isolsolutions",
+      "short_description": "Ruban aluminium pur résistant à 150°C — joints, raccords et réparations d'isolation thermique.",
+      "full_description": "La Bande Aluminium Adhésive 50 µm d'Isolsolutions est un ruban adhésif professionnel en aluminium pur pour la réalisation et la réparation des joints d'isolation thermique. Sa résistance en continu jusqu'à 150°C le rend compatible avec les installations chaudes et les conduits CVC. Conforme aux normes de pare-vapeur. Disponible en largeur 50 ou 75 mm, en rouleau de 50 mètres.",
+      "badge": "Étanchéité",
+      "primary_image": "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg",
+      "images": [
+        "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Aluminium pur 50 µm — imperméabilité totale",
+        "Résistant en continu jusqu'à 150°C",
+        "Largeurs 50 mm et 75 mm disponibles",
+        "Rouleau de 50 mètres — grand rendement",
+        "Joints et raccords d'isolation étanches",
+        "Conforme normes pare-vapeur"
+      ],
+      "specifications": {
+        "Matière": "Aluminium pur 50 µm",
+        "Température maximale": "150°C en continu",
+        "Largeurs disponibles": "50 mm / 75 mm",
+        "Longueur par rouleau": "50 m"
+      },
+      "seo_keywords": "bande aluminium adhésive isolation, ruban alu étanchéité, joint isolation thermique aluminium, Isolsolutions accessoires",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "colle-isolant-haute-temp",
+      "slug": "colle-isolant-haute-temp",
+      "category_id": "produits-sur-commande",
+      "category_name": "Produits sur Commande",
+      "product_name": "Colle Isolant Haute Température",
+      "brand": "Isolsolutions",
+      "short_description": "Colle silicate pour fixation d'isolants sur surfaces chaudes jusqu'à 500°C — seau de 5 kg.",
+      "full_description": "La Colle Isolant Haute Température d'Isolsolutions est une colle à base de silicate spécialement formulée pour la fixation d'isolants thermiques sur des surfaces portées à haute température. Sa résistance jusqu'à 500°C et sa forte adhérence sur métaux, béton et matériaux minéraux en font l'outil indispensable des chantiers industriels. Séchage rapide, conditionnement seau de 5 kg. Produit importé depuis nos partenaires spécialisés.",
+      "badge": "Spécial",
+      "primary_image": "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg",
+      "images": [
+        "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Résistante jusqu'à 500°C en continu",
+        "Base silicate — haute stabilité thermique",
+        "Forte adhérence sur métaux et minéraux",
+        "Séchage rapide sur surfaces chaudes",
+        "Seau de 5 kg — conditionnement chantier",
+        "Compatible isolants laine de roche et céramique"
+      ],
+      "specifications": {
+        "Température maximale": "500°C",
+        "Base chimique": "Silicate",
+        "Conditionnement": "Seau de 5 kg",
+        "Application": "Métaux, béton, minéraux"
+      },
+      "seo_keywords": "colle isolant haute température, colle silicate 500°C, fixation isolant thermique chaud, Isolsolutions accessoires industrie",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    },
+    {
+      "product_id": "tissu-verre-silicone",
+      "slug": "tissu-verre-silicone",
+      "category_id": "produits-sur-commande",
+      "category_name": "Produits sur Commande",
+      "product_name": "Tissu de Verre Siliconé 550 g/m²",
+      "brand": "Isolsolutions",
+      "short_description": "Tissu de verre enduit silicone résistant à 550°C — enveloppe pour matelas isolants démontables.",
+      "full_description": "Le Tissu de Verre Siliconé 550 g/m² d'Isolsolutions est un matériau technique de haute performance pour la confection d'enveloppes protectrices de matelas isolants démontables. Sa résistance thermique jusqu'à 550°C, combinée à son étanchéité aux projections de liquides et sa résistance mécanique élevée, en font l'enveloppe de référence pour les matelas isolants sur tuyauteries, vannes et équipements industriels. Livré en rouleaux de 50 m × 1 m.",
+      "badge": "Technique",
+      "primary_image": "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg",
+      "images": [
+        "data_produits/Pieces et accessoires/6863dc04885effcd26c69a13f661b83e.jpg"
+      ],
+      "technical_documents": [],
+      "advantages": [
+        "Résistance thermique jusqu'à 550°C",
+        "Enduit silicone — étanchéité aux projections",
+        "Résistance mécanique élevée — longue durée de vie",
+        "Rouleau 50 m × 1 m — grande couverture",
+        "Grammage 550 g/m² — robustesse garantie",
+        "Idéal confection matelas isolants démontables"
+      ],
+      "specifications": {
+        "Température maximale": "550°C",
+        "Grammage": "550 g/m²",
+        "Dimensions du rouleau": "50 m × 1 m",
+        "Enduit": "Silicone"
+      },
+      "seo_keywords": "tissu verre siliconé haute température, enveloppe matelas isolant, tissu verre 550 degrés, Isolsolutions accessoires thermique",
+      "source_file": "products-data.js",
+      "created_at": "2026-11-22T17:39:01.566327+00:00",
+      "updated_at": "2026-11-22T17:39:01.566327+00:00"
+    }
+  ]
+}

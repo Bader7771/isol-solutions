@@ -1,0 +1,9 @@
+dist/
+node_modules/
+backend/__pycache__/
+backend/devis.db
+backend/.env
+.DS_Store
+test-results/
+
+backend/target/

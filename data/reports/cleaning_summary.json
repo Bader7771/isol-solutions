@@ -1,0 +1,78 @@
+{
+  "pipeline_run": {
+    "timestamp": "2026-11-22T17:39:01.566327+00:00",
+    "pipeline_version": "1.0.0",
+    "input_file": "products-data.js",
+    "input_format": "JavaScript (ES6 const declarations)"
+  },
+  "record_counts": {
+    "raw_products": 34,
+    "raw_categories": 6,
+    "cleaned_products": 34,
+    "cleaned_categories": 6,
+    "rejected_products": 0,
+    "records_lost": 0
+  },
+  "duplicates": {
+    "exact_id_duplicates": 0,
+    "similar_name_pairs": 0,
+    "content_duplicates": 0
+  },
+  "cleaning_operations": {
+    "total_operations": 11,
+    "operation_breakdown": {
+      "fix_image_path_folder_name": 5,
+      "fix_broken_pdf_path": 4,
+      "fix_image_path_unicode": 2
+    },
+    "warnings": 2,
+    "errors": 0
+  },
+  "validation_results": {
+    "checks_passed": 7,
+    "checks_failed": 0,
+    "total_checks": 7,
+    "details": {
+      "unique_ids": true,
+      "valid_categories": true,
+      "required_fields": true,
+      "images_exist": true,
+      "pdfs_exist": true,
+      "has_specifications": true,
+      "name_length": true
+    }
+  },
+  "data_quality_improvements": [
+    "Unicode normalization (NFC) applied to all text fields",
+    "Invisible/zero-width characters removed",
+    "Whitespace normalized across all text fields",
+    "Product names standardized (dash/unit formatting)",
+    "Brand extracted and normalized from specifications",
+    "URL-safe slugs generated for all products",
+    "Category references validated against category definitions",
+    "Image paths validated for file existence",
+    "PDF document paths validated and broken references fixed",
+    "Broken PDF paths corrected (produit effisius → Pare-vapeur et Pare-pluie)",
+    "Consistent field naming convention applied (snake_case)",
+    "Metadata timestamps added to all records",
+    "Backward-compatible JS output generated"
+  ],
+  "remaining_issues": [
+    {
+      "message": "Image issues: ['non_ascii_characters_in_path']",
+      "product_id": "revetement-fibre-polyester"
+    },
+    {
+      "message": "Gallery image issues: ['non_ascii_characters_in_path'] for 'data_produits/revetement murale/PET 办公隔断 1.png'",
+      "product_id": "revetement-fibre-polyester"
+    }
+  ],
+  "category_distribution": {
+    "panneaux-acoustiques": 5,
+    "laine-de-roche": 9,
+    "portes-isolees": 5,
+    "revetements-techniques": 5,
+    "isolation-industrielle": 5,
+    "produits-sur-commande": 5
+  }
+}

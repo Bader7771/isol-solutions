@@ -1,0 +1,100 @@
+{
+  "raw_product_count": 34,
+  "raw_category_count": 6,
+  "duplicates_detected": {
+    "exact_id_duplicates": [],
+    "similar_names": [],
+    "content_duplicates": []
+  },
+  "cleaning_operations": [
+    {
+      "operation": "fix_image_path_folder_name",
+      "product_id": "panneau-mural-absorb-40",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/1.jpg",
+      "after": "data_produits/Panneaux Acoustiques/1.jpg"
+    },
+    {
+      "operation": "fix_image_path_folder_name",
+      "product_id": "panneau-mural-absorb-50",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/2.jpg",
+      "after": "data_produits/Panneaux Acoustiques/2.jpg"
+    },
+    {
+      "operation": "fix_image_path_folder_name",
+      "product_id": "panneau-plafond-suspendu",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/1743145388089.png",
+      "after": "data_produits/Panneaux Acoustiques/1743145388089.png"
+    },
+    {
+      "operation": "fix_broken_pdf_path",
+      "product_id": "panneau-plafond-suspendu",
+      "field": "technical_documents.path",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/High Quality perf Round_Ceiling_Panels_datasheet_EN_24mm.pdf",
+      "after": "data_produits/Panneaux Acoustiques/High Quality perf Round_Ceiling_Panels_datasheet_EN_24mm.pdf"
+    },
+    {
+      "operation": "fix_image_path_folder_name",
+      "product_id": "panneau-design-bois",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/362F62D5-A850-4EDF-A39E-5B6196F67329.jpg",
+      "after": "data_produits/Panneaux Acoustiques/362F62D5-A850-4EDF-A39E-5B6196F67329.jpg"
+    },
+    {
+      "operation": "fix_image_path_folder_name",
+      "product_id": "bafle-acoustique-vertical",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/Panneau acoustique/c83aa1b50f7e47b9c06d2326a3d5b4ad.jpg",
+      "after": "data_produits/Panneaux Acoustiques/c83aa1b50f7e47b9c06d2326a3d5b4ad.jpg"
+    },
+    {
+      "operation": "fix_image_path_unicode",
+      "product_id": "revetement-fibre-polyester",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/revetement murale/PET ???? 1.png",
+      "after": "data_produits/revetement murale/PET 办公隔断 1.png"
+    },
+    {
+      "operation": "fix_image_path_unicode",
+      "product_id": "revetement-fibre-polyester",
+      "field": "image",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/revetement murale/PET 办公隔断 1.png",
+      "after": "data_produits/revetement murale/PET 办公隔断 1.png"
+    },
+    {
+      "operation": "fix_broken_pdf_path",
+      "product_id": "insulation-pins-autoadhesifs",
+      "field": "technical_documents.path",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/produit effisius/Effisus vap x.pdf",
+      "after": "data_produits/Pare-vapeur et Pare-pluie/Effisus vap x.pdf"
+    },
+    {
+      "operation": "fix_broken_pdf_path",
+      "product_id": "insulation-pins-autoadhesifs",
+      "field": "technical_documents.path",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/produit effisius/TDS 13.V02_2Bond DS_EN.pdf",
+      "after": "data_produits/Pare-vapeur et Pare-pluie/TDS 13.V02_2Bond DS_EN.pdf"
+    },
+    {
+      "operation": "fix_broken_pdf_path",
+      "product_id": "rondelles-fixation-isolant",
+      "field": "technical_documents.path",
+      "timestamp": "2026-11-22T17:39:01.566327+00:00",
+      "before": "data_produits/produit effisius/TDS-13.V01_2Adjoin-DF_EN-1.pdf",
+      "after": "data_produits/Pare-vapeur et Pare-pluie/TDS-13.V01_2Adjoin-DF_EN-1.pdf"
+    }
+  ],
+  "total_operations": 11
+}
