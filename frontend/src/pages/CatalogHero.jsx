@@ -1,39 +1,43 @@
 import React from "react";
-
-export default function CatalogHero({ cat, title }) {
+import ProductMedia from "../features/products/ProductMedia";
+export default function CatalogHero({ cat, products }) {
+  const shown = new Set();
+  const samples = products
+    .filter((p) => {
+      if (shown.has(p.primary_image)) return false;
+      shown.add(p.primary_image);
+      return true;
+    })
+    .slice(0, 3);
   return (
-    <>
-      <section className="category-hero" id="category-hero">
-        <div className="category-hero__bg">
-          <img
-            id="category-hero-img"
-            src={cat?.image || "assets/images/slide-bureau.png"}
-            alt={title}
-            loading="eager"
-          />
-          <div className="category-hero__overlay"></div>
-        </div>
-        <div className="container category-hero__content">
-          <nav className="breadcrumb" aria-label="Fil d'Ariane">
-            <a href="index.html">Accueil</a>
-            <span className="breadcrumb__sep">›</span>
-            <a href="index.html#solutions">Solutions</a>
-            <span className="breadcrumb__sep">›</span>
-            <span id="breadcrumb-category" className="breadcrumb__current">
-              {title}
-            </span>
-          </nav>
-          <div className="category-hero__badge" id="category-badge">
-            {cat?.badge}
+    <header className="cat-hero">
+      <div>
+        <nav className="cat-crumb" aria-label="Fil d’Ariane">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          {cat ? (
+            <>
+              <a href="/catalogue.html">Catalogue</a>
+              <span>/</span>
+              {cat.title}
+            </>
+          ) : (
+            "Catalogue"
+          )}
+        </nav>
+        <h1>{cat?.title || "Catalogue technique"}</h1>
+        <p>
+          {cat?.description ||
+            "Matériaux d’isolation, solutions acoustiques et composants pour vos travaux d’aménagement."}
+        </p>
+      </div>
+      <div className="cat-hero-samples" aria-hidden="true">
+        {samples.map((p) => (
+          <div key={p.product_id}>
+            <ProductMedia path={p.primary_image} alt="" sizes="140px" eager />
           </div>
-          <h1 id="category-title" className="category-hero__title">
-            {title}
-          </h1>
-          <p id="category-description" className="category-hero__desc">
-            {cat?.description}
-          </p>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </header>
   );
 }

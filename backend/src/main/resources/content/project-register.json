@@ -1,0 +1,55 @@
+[
+  {
+    "approvedForPublication": false,
+    "hospital": true,
+    "hospitalWrittenApproval": false,
+    "commissioningPartyWrittenApproval": false,
+    "reference": {
+      "slug": "salle-hdr-fes",
+      "title": "Salle de curiethérapie HDR",
+      "sector": "Santé",
+      "location": "Fès",
+      "context": "Préparation d’une salle de curiethérapie au CHU Hassan II pour BIOMEDECA.",
+      "constraints": [],
+      "solutions": ["Renforcement en béton réalisé. Aménagement à venir selon le plan du 20 novembre 2026."],
+      "duration": null,
+      "photos": [],
+      "documents": []
+    }
+  },
+  {
+    "approvedForPublication": false,
+    "hospital": true,
+    "hospitalWrittenApproval": false,
+    "commissioningPartyWrittenApproval": false,
+    "reference": {
+      "slug": "facade-hopital-rabat",
+      "title": "Façade hospitalière",
+      "sector": "Enveloppe",
+      "location": "Rabat",
+      "context": "Projet de façade hospitalière mentionné dans le plan de novembre 2026.",
+      "constraints": [],
+      "solutions": [],
+      "duration": null,
+      "photos": [],
+      "documents": []
+    }
+  },
+  {
+    "approvedForPublication": false,
+    "hospital": false,
+    "commissioningPartyWrittenApproval": false,
+    "reference": {
+      "slug": "salles-ain-sebaa",
+      "title": "Salles à Aïn Sebaâ",
+      "sector": "Industrie & bureaux",
+      "location": "Casablanca",
+      "context": "Référence mentionnée dans le plan de novembre 2026. Le périmètre exact est à documenter.",
+      "constraints": [],
+      "solutions": [],
+      "duration": null,
+      "photos": [],
+      "documents": []
+    }
+  }
+]

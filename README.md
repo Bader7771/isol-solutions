@@ -1,6 +1,6 @@
 # Isolmaroc
 
-Isolmaroc is a Java 21 and React application for browsing insulation products, downloading technical documents and requesting quotations. Spring Boot serves the production frontend and REST API on the same origin. Existing public page names and product links resolve to React routes.
+Isolmaroc is a Java 25 and React application for browsing insulation products, downloading technical documents and requesting quotations. Spring Boot serves the production frontend and REST API on the same origin. Existing public page names and product links resolve to React routes.
 
 ## Layout
 
@@ -17,7 +17,7 @@ Isolmaroc is a Java 21 and React application for browsing insulation products, d
 
 ## Development
 
-Install JDK 21, Maven 3.9 and Node.js 22 or 24 with npm. Set `JAVA_HOME` to the JDK 21 installation. Run these commands in separate terminals from the repository root.
+Install JDK 25, Maven 3.9 and Node.js 22 or 24 with npm. Set `JAVA_HOME` to the JDK 25 installation. Run these commands in separate terminals from the repository root.
 
 ```sh
 cd backend

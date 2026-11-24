@@ -25,3 +25,4 @@ export const submitContact = (contact) =>
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(contact),
   });
+export const fetchContent = () => request("/api/content");

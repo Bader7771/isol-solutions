@@ -62,3 +62,15 @@ test("quotation links include product name and available reference", () => {
     }
   }
 });
+
+test("every responsive image corresponds to its preserved product image", async () => {
+  const { access } = await import("node:fs/promises");
+  const { imageVariants } = await import("../src/features/products/media.js");
+  for (const product of products) {
+    const variants = imageVariants(product.primary_image).split(", ");
+    for (const variant of variants) {
+      const [url] = variant.split(" ");
+      await access(new URL("../public" + url, import.meta.url));
+    }
+  }
+});

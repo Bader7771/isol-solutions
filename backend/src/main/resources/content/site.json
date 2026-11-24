@@ -1,0 +1,403 @@
+{
+  "services": [
+    {
+      "slug": "sante-radioprotection",
+      "title": "Santé & radioprotection",
+      "summary": "Préparer une salle d’imagerie ou de traitement pour que l’équipe d’installation puisse intervenir à la date convenue.",
+      "sections": [
+        {
+          "title": "Salles d’imagerie",
+          "text": "Pour la radiologie conventionnelle, le scanner, la mammographie ou l’imagerie dentaire, la visite réunit les contraintes du local et le plan d’implantation du fournisseur. Ensemble, nous identifions les accès, les réservations, les alimentations et les finitions à reprendre."
+        },
+        {
+          "title": "Radiothérapie et curiethérapie HDR",
+          "text": "Un bunker de radiothérapie ou une salle de curiethérapie HDR demande une coordination étroite entre structure, protections, passages techniques et équipements. Le chantier est séquencé pour permettre les contrôles avant la fermeture des ouvrages."
+        },
+        {
+          "title": "Blindage et aménagement hospitalier",
+          "text": "Selon les documents validés, les lots peuvent associer béton baryté, blindage en plomb, portes et huisseries plombées, verre plombé, plafonds hospitaliers et sols techniques. Les raccords entre ces ouvrages font partie de la préparation du chantier."
+        },
+        {
+          "title": "Responsabilités techniques",
+          "text": "Le physicien médical établit et signe les calculs de blindage. Le BET établit la note technique et les prescriptions d’exécution. ISOL SOLUTIONS réalise les travaux selon ces documents, sous la supervision d’un bureau de contrôle agréé."
+        }
+      ],
+      "items": [
+        "Plan d’implantation de l’équipement",
+        "Étude du physicien médical et note du BET",
+        "Calendrier de livraison et contraintes du site"
+      ]
+    },
+    {
+      "slug": "acoustique",
+      "title": "Acoustique",
+      "summary": "Améliorer l’intelligibilité de la parole, limiter les transmissions de bruit et retrouver un confort adapté à l’usage du lieu.",
+      "sections": [
+        {
+          "title": "Écouter le local",
+          "text": "Dans une salle de réunion, un auditorium ou un restaurant, des surfaces dures prolongent les sons et gênent la conversation. La visite sert à repérer les parois disponibles, les équipements bruyants et les contraintes de circulation ou d’entretien."
+        },
+        {
+          "title": "Traiter les réflexions",
+          "text": "Panneaux acoustiques en laine minérale habillée de tissu, éléments en PET ou pièges à basses pour les studios et cabines vocales répondent à des usages différents. Les emplacements, finitions et quantités se définissent selon le local et les prescriptions du projet."
+        },
+        {
+          "title": "Limiter les transmissions",
+          "text": "Dans un hôtel ou un environnement industriel, le bruit peut passer par les portes, cloisons, plafonds et réseaux. La coordination des lots permet de traiter ces passages en complément de la correction acoustique intérieure."
+        }
+      ],
+      "items": [
+        "Salles de réunion et auditoriums",
+        "Hôtels, restaurants et espaces de travail",
+        "Studios, cabines vocales et ateliers"
+      ]
+    },
+    {
+      "slug": "isolation-thermique-enveloppe",
+      "title": "Isolation thermique & enveloppe",
+      "summary": "Traiter ensemble les parois, leurs raccords et les ouvrages d’étanchéité pour une enveloppe continue.",
+      "sections": [
+        {
+          "title": "Façades ventilées",
+          "text": "La laine de roche de façade, les fixations, les membranes prévues par l’étude et le parement s’insèrent dans un même système. La préparation porte notamment sur les ouvertures, les pieds de façade et les raccordements avec la toiture."
+        },
+        {
+          "title": "Toitures et terrasses",
+          "text": "Sur une toiture-terrasse, la visite relève le support, les pentes, les évacuations et les relevés existants. Le lot d’isolation s’organise avec le système d’étanchéité et les interventions des autres corps d’état."
+        },
+        {
+          "title": "Continuité des couches",
+          "text": "La position du pare-vapeur et le traitement de la lame d’air dépendent de la composition retenue par la maîtrise d’œuvre. Les plans de détail et fiches techniques guident la pose aux jonctions et aux traversées."
+        }
+      ],
+      "items": [
+        "Façades et isolation en laine de roche",
+        "Pare-vapeur et traitement des raccords",
+        "Isolation de toiture et étanchéité de terrasse"
+      ]
+    },
+    {
+      "slug": "btp-amenagement",
+      "title": "BTP & aménagement",
+      "summary": "Un interlocuteur technique coordonne le gros œuvre, les lots intérieurs et les finitions jusqu’à la remise des espaces.",
+      "sections": [
+        {
+          "title": "Préparer les supports",
+          "text": "Les plans et la visite permettent de repérer les reprises de gros œuvre, les cloisons à modifier et les réservations pour les réseaux. Les dispositions structurelles relèvent du BET compétent."
+        },
+        {
+          "title": "Coordonner les lots",
+          "text": "L’électricité et les passages techniques sont coordonnés avec les cloisons et faux plafonds avant fermeture. Les travaux de peinture et la pose des sols, notamment en résine époxy lorsque le projet le prévoit, suivent l’état des supports et le calendrier d’occupation."
+        },
+        {
+          "title": "Réceptionner ensemble",
+          "text": "Pour un aménagement clé en main, le périmètre et les interfaces avec le client sont précisés au devis. Le suivi porte sur l’avancement, les contrôles intermédiaires, les réserves et les documents de réception."
+        }
+      ],
+      "items": [
+        "Gros œuvre, cloisons et faux plafonds",
+        "Travaux électriques, peinture et sols époxy",
+        "Aménagement complet et coordination des lots"
+      ]
+    }
+  ],
+  "sectors": [
+    {
+      "slug": "hopitaux-cliniques",
+      "title": "Hôpitaux & cliniques",
+      "summary": "Organiser une intervention en site de soins en tenant compte de l’hygiène, des circulations et de la continuité d’activité.",
+      "sections": [
+        {
+          "title": "Préparer les phases",
+          "text": "Avec les services biomédicaux, techniques et d’hygiène, nous identifions les zones occupées, les accès chantier et les périodes d’intervention possibles."
+        },
+        {
+          "title": "Coordonner la réception",
+          "text": "Les équipes de la clinique, du centre d’imagerie ou d’oncologie, le fournisseur et les intervenants chargés des études et contrôles disposent de points d’arrêt identifiés avant la remise de la salle."
+        }
+      ],
+      "items": [
+        "Accès et contraintes d’exploitation",
+        "Phasage des travaux et du contrôle"
+      ]
+    },
+    {
+      "slug": "fournisseurs-equipements",
+      "title": "Fournisseurs d’équipements médicaux",
+      "summary": "Disposer d’une salle prête à recevoir la machine lorsque l’équipe d’installation arrive sur site.",
+      "sections": [
+        {
+          "title": "Partir du plan fournisseur",
+          "text": "Le plan d’implantation précise les accès, l’encombrement et les interfaces à prendre en compte. L’étude du physicien et la note du BET fixent les travaux de protection et les dispositions constructives."
+        },
+        {
+          "title": "Partager un calendrier",
+          "text": "Le chef de projet installation et notre équipe rapprochent les dates de livraison, les points de contrôle et les conditions de mise à disposition du local."
+        }
+      ],
+      "items": [
+        "Plan d’implantation et version applicable",
+        "Date de livraison et interlocuteur installation"
+      ]
+    },
+    {
+      "slug": "hotellerie",
+      "title": "Hôtellerie",
+      "summary": "Planifier la rénovation des chambres et espaces communs en protégeant le confort des occupants.",
+      "sections": [
+        {
+          "title": "Repérer les sources de gêne",
+          "text": "Dans une chambre, le bruit peut venir du couloir, du local voisin ou d’un équipement. En salle de conférence, la réverbération nuit à la parole. Chaque usage appelle un périmètre de travaux distinct."
+        },
+        {
+          "title": "Intervenir en site occupé",
+          "text": "Avec la direction technique, nous préparons des zones de travaux, des horaires et une séquence de remise à disposition compatibles avec les réservations."
+        }
+      ],
+      "items": [
+        "Chambres, restaurants et salles de conférence",
+        "Programme de rénovation et périodes d’ouverture"
+      ]
+    },
+    {
+      "slug": "promotion-immobiliere",
+      "title": "Promotion immobilière",
+      "summary": "Coordonner l’isolation thermique, la séparation acoustique des logements et l’étanchéité des terrasses.",
+      "sections": [
+        {
+          "title": "Lire l’enveloppe en coupe",
+          "text": "Les détails de façade, toiture et menuiserie permettent de repérer les raccords à prévoir entre lots. La composition des parois et la disponibilité des supports sont examinées avant chiffrage."
+        },
+        {
+          "title": "Préparer la livraison par zone",
+          "text": "La direction technique peut rapprocher le planning des bâtiments, les visas des matériaux et les contrôles à réaliser avant recouvrement."
+        }
+      ],
+      "items": [
+        "Plans de façade et coupes",
+        "Phasage des bâtiments et interfaces de lots"
+      ]
+    },
+    {
+      "slug": "industrie-bureaux",
+      "title": "Industrie & bureaux",
+      "summary": "Adapter le traitement des ateliers, hangars et espaces tertiaires aux conditions d’exploitation.",
+      "sections": [
+        {
+          "title": "Distinguer les usages",
+          "text": "Une salle de réunion demande une parole intelligible. Dans un atelier, les sources de bruit, les flux et les plages de maintenance conditionnent l’intervention. Un hangar peut aussi nécessiter une reprise de l’enveloppe thermique."
+        },
+        {
+          "title": "Prévoir les interventions",
+          "text": "Les services généraux et la maintenance précisent les accès, les horaires, les zones sensibles et les besoins de remise en service."
+        }
+      ],
+      "items": [
+        "Équipements et sources sonores",
+        "Accès, maintenance et conditions d’exploitation"
+      ]
+    },
+    {
+      "slug": "architectes-bet",
+      "title": "Architectes, BET & entreprises générales",
+      "summary": "Confier les lots spécialisés à une équipe qui travaille à partir des prescriptions et documente les interfaces de chantier.",
+      "sections": [
+        {
+          "title": "Préparer le dossier d’exécution",
+          "text": "Les plans, le cahier des prescriptions et les fiches techniques permettent de préciser les limites de lots, les échantillons éventuels et les validations attendues."
+        },
+        {
+          "title": "Organiser le suivi",
+          "text": "Un interlocuteur coordonne les approvisionnements et les interventions. Les écarts de site sont remontés aux concepteurs pour décision avant modification de l’ouvrage."
+        }
+      ],
+      "items": [
+        "Versions des plans et visas",
+        "Contrôles, coordination et documents de réception"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "slug": "preparer-salle-radiologie",
+      "title": "Préparer une salle de radiologie avant l’arrivée de la machine",
+      "summary": "Pour préparer une salle de radiologie au Maroc, réunissez l’installateur, l’établissement et les responsables des études autour des mêmes plans.",
+      "sections": [
+        {
+          "title": "Rassembler les données d’implantation",
+          "text": "Demandez au fournisseur le plan à jour, les modalités de livraison et la liste des interfaces à préparer. Identifiez sur site le trajet de la machine, les accès à maintenir, les locaux voisins et la date souhaitée de mise à disposition."
+        },
+        {
+          "title": "Faire valider les documents de travail",
+          "text": "Le physicien médical établit les calculs de blindage. Le BET formalise ses prescriptions. Comparez les versions des plans utilisés par l’installateur et par les entreprises afin de faire traiter les écarts avant les travaux."
+        },
+        {
+          "title": "Programmer les contrôles",
+          "text": "Repérez avec le bureau de contrôle agréé les ouvrages à examiner avant fermeture, puis inscrivez ces points au planning. La visite de réception permet de vérifier les réserves et de transmettre les documents d’exécution au responsable de l’installation."
+        }
+      ],
+      "items": [
+        "Plan d’implantation daté",
+        "Contacts du fournisseur, du physicien et du BET",
+        "Date de visite et contraintes d’accès"
+      ]
+    },
+    {
+      "slug": "plomb-beton-baryte",
+      "title": "Blindage en plomb ou béton baryté",
+      "summary": "Pour chiffrer une protection, l’entreprise doit connaître la prescription du projet et les interfaces à réaliser sur chantier.",
+      "sections": [
+        {
+          "title": "Partir de l’étude de radioprotection",
+          "text": "Le choix d’une protection dépend de l’installation et de son environnement. Le physicien médical détermine les besoins de blindage. Le BET examine notamment les dispositions constructives, les supports et les charges relevant de son intervention."
+        },
+        {
+          "title": "Comparer les conditions de mise en œuvre",
+          "text": "Un ouvrage en béton baryté et un assemblage intégrant du plomb impliquent des approvisionnements, des supports et des finitions différents. La porte plombée, son huisserie, le vitrage et les passages de réseaux doivent être traités avec les parois auxquelles ils se raccordent."
+        },
+        {
+          "title": "Décrire les interfaces dans la demande",
+          "text": "Transmettez les plans, prescriptions, conditions d’accès et points de contrôle. Si une variante est envisagée, soumettez-la au physicien et au BET avant toute substitution. La visite de l’entreprise sert à chiffrer l’exécution prescrite."
+        }
+      ],
+      "items": [
+        "Étude et plans à jour",
+        "Détails des ouvertures et traversées",
+        "Contraintes de livraison et de contrôle"
+      ]
+    },
+    {
+      "slug": "isoler-chambre-hotel",
+      "title": "Isoler une chambre d’hôtel du bruit",
+      "summary": "Avant de choisir un matériau, identifiez la nuisance, sa provenance et les périodes pendant lesquelles elle gêne les clients.",
+      "sections": [
+        {
+          "title": "Observer la chambre en exploitation",
+          "text": "Comparez les observations près de la porte palière, des cloisons mitoyennes, des fenêtres et des réseaux. Notez si le bruit suit le passage dans le couloir, le fonctionnement d’un équipement ou l’activité de la chambre voisine."
+        },
+        {
+          "title": "Distinguer transmission et réverbération",
+          "text": "Une paroi séparative et son étanchéité à l’air participent à l’isolation entre locaux. Des panneaux absorbants agissent surtout sur les réflexions à l’intérieur d’une pièce. Ces interventions répondent à des problèmes différents, par exemple entre chambres et dans une salle de réunion de l’hôtel."
+        },
+        {
+          "title": "Planifier par zone",
+          "text": "Pour un hôtel qui reste ouvert, convenez des accès, horaires bruyants et chambres mobilisables. Une chambre témoin peut servir à examiner les finitions et l’intégration des équipements avant d’étendre les travaux."
+        }
+      ],
+      "items": [
+        "Source et horaire de la nuisance",
+        "Plan des chambres et locaux adjacents",
+        "Périodes disponibles pour les travaux"
+      ]
+    },
+    {
+      "slug": "facade-ventilee-isolant-pare-vapeur",
+      "title": "Façade ventilée, isolant et pare-vapeur",
+      "summary": "Comprendre la composition d’une façade aide à préparer les raccords avec les menuiseries, les toitures et les autres lots.",
+      "sections": [
+        {
+          "title": "Lire la composition prescrite",
+          "text": "Une façade ventilée associe notamment support, isolant, dispositif de fixation, lame d’air et parement. La laine de roche peut assurer la continuité de l’isolation suivant la composition étudiée. Le pare-vapeur, lorsqu’il est prescrit, contribue à la maîtrise des transferts de vapeur d’eau."
+        },
+        {
+          "title": "Identifier les détails singuliers",
+          "text": "Au droit des baies, aux pieds et têtes de façade ou autour des traversées, plusieurs ouvrages se rencontrent. Le BET précise la position et la continuité des membranes selon le support et les conditions du projet."
+        },
+        {
+          "title": "Préparer le contrôle avant parement",
+          "text": "Une fois le parement posé, certaines couches deviennent difficiles à examiner. Prévoyez les vérifications des fixations et des raccords au bon moment, en lien avec les fiches techniques et les prescriptions de la maîtrise d’œuvre."
+        }
+      ],
+      "items": [
+        "Coupe de façade prescrite",
+        "Détails des baies et raccords",
+        "Ordre de pose et points de contrôle"
+      ]
+    }
+  ],
+  "method": {
+    "slug": "methode-qualite",
+    "title": "Méthode & qualité",
+    "summary": "Chaque intervenant connaît son périmètre. Sur un chantier de santé, cinq étapes relient les études à la remise de la salle.",
+    "sections": [
+      {
+        "title": "Étude du physicien médical",
+        "text": "Le physicien médical étudie les protections nécessaires à l’installation et signe les calculs de blindage. Son étude constitue une donnée d’entrée pour les travaux."
+      },
+      {
+        "title": "Note technique du BET",
+        "text": "Le bureau d’études techniques traduit les exigences du projet en prescriptions constructives et établit les notes relevant de sa mission. Le périmètre des lots et les points à vérifier sont identifiés."
+      },
+      {
+        "title": "Exécution des travaux",
+        "text": "ISOL SOLUTIONS exécute les ouvrages selon l’étude du physicien médical et la note du BET, sous la supervision du bureau de contrôle agréé. L’équipe organise les accès, les approvisionnements, les interfaces et les autocontrôles."
+      },
+      {
+        "title": "Inspection et contrôle",
+        "text": "Les points d’arrêt permettent au bureau de contrôle agréé de réaliser les vérifications prévues. Les essais de laboratoire prévus au marché sont confiés aux intervenants qualifiés désignés."
+      },
+      {
+        "title": "Réception et remise du dossier",
+        "text": "L’équipe rassemble les relevés et documents d’exécution, accompagne la visite de réception et suit les réserves relevant de ses lots. Le fournisseur peut alors préparer sa propre intervention selon le calendrier convenu."
+      }
+    ],
+    "items": [
+      "Sécurité chantier et organisation des zones de travail",
+      "Autocontrôles réalisés avant fermeture des ouvrages",
+      "Compte rendu des interfaces, décisions et réserves"
+    ]
+  },
+  "about": {
+    "slug": "a-propos",
+    "title": "À propos",
+    "summary": "Depuis 2020, notre métier relie isolation et aménagement technique pour les professionnels au Maroc.",
+    "sections": [
+      {
+        "title": "De l’isolation aux environnements exigeants",
+        "text": "L’activité commencée en 2020 s’est développée autour de besoins qui se rencontrent sur un même chantier : maîtriser le bruit, la chaleur et l’humidité, puis aménager les espaces correspondants. Aujourd’hui, ISOL SOLUTIONS réunit ces travaux avec l’exécution de locaux de santé."
+      },
+      {
+        "title": "Une équipe de coordination et d’exécution",
+        "text": "Med El Mazzouz assure la direction commerciale et technique. Selon le périmètre du chantier, l’équipe coordonne les corps d’état et les échanges avec le maître d’ouvrage, le fournisseur et les professionnels chargés des études et contrôles."
+      },
+      {
+        "title": "Intervenir au Maroc",
+        "text": "Nous accompagnons les projets à Fès, Meknès, Rabat, Casablanca et dans l’ensemble du Maroc. La visite technique permet de préciser les contraintes du site avant de proposer une intervention."
+      }
+    ],
+    "items": [
+      "Santé & radioprotection",
+      "Acoustique",
+      "Isolation thermique & enveloppe",
+      "BTP & aménagement"
+    ]
+  },
+  "english": {
+    "slug": "international-suppliers",
+    "title": "Technical room preparation in Morocco",
+    "summary": "ISOL SOLUTIONS coordinates construction and fit-out work for medical equipment suppliers preparing installations in Morocco.",
+    "sections": [
+      {
+        "title": "From installation drawings to a site visit",
+        "text": "Share the equipment layout, delivery date, site location and access constraints. We coordinate with your installation manager and the hospital team to define a practical construction scope and handover sequence."
+      },
+      {
+        "title": "Clear responsibility for shielding design",
+        "text": "The medical physicist prepares and signs the shielding calculations. The engineering consultancy issues the technical specification. ISOL SOLUTIONS carries out the specified works under the supervision of an authorized inspection body."
+      },
+      {
+        "title": "Prepare the handover",
+        "text": "The scope may include structural works, shielding assemblies, lead-lined frames and doors, hospital ceilings, technical flooring and finishes. Inspection points are agreed before works are covered."
+      },
+      {
+        "title": "Request a technical visit",
+        "text": "Tell us which room you are preparing and when installation is scheduled. Our team covers Fez, Meknes, Rabat, Casablanca and projects across Morocco."
+      }
+    ],
+    "items": [
+      "Equipment layout and room drawings",
+      "Medical physicist’s study and engineering specification",
+      "Target installation date and site contact"
+    ]
+  }
+}

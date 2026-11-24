@@ -73,18 +73,17 @@ try {
   assert.match(requests[0], /Test\+Local/);
   for (const c of Object.values(source.categories)) {
     await goto("categorie.html?cat=" + c.category_id);
-    assert.equal(
-      await page.locator(".product-mini-card").count(),
-      c.product_count,
-    );
+    await page.getByRole("heading", { level: 1, name: c.title }).waitFor();
+    assert.equal(await page.locator(".cat-card").count(), c.product_count);
   }
   await goto("catalogue.html");
   await page.getByRole("searchbox").fill("ROCKFACADE");
-  assert.equal(await page.locator(".product-mini-card").count(), 1);
+  assert.equal(await page.locator(".cat-card").count(), 1);
   await page.getByRole("searchbox").fill("zzzzz");
   await page.getByText("Aucun produit correspondant.").waitFor();
   for (const p of source.products) {
     await goto("produit.html?id=" + p.product_id);
+    await page.locator("#product-title").waitFor();
     assert.equal(
       await page.locator("#product-title").textContent(),
       p.product_name,
@@ -95,13 +94,13 @@ try {
     );
     assert.equal(
       await page.locator("#product-image").getAttribute("src"),
-      p.primary_image,
+      "/" + p.primary_image,
     );
     assert.ok((await page.request.get(base + "/" + p.primary_image)).ok());
     for (const d of p.technical_documents)
       assert.ok((await page.request.get(base + "/" + d.path)).ok());
     const message = new URL(
-      await page.locator(".whatsapp-float").getAttribute("href"),
+      await page.locator(".cat-detail-actions a").getAttribute("href"),
     ).searchParams.get("text");
     assert.ok(message.includes(p.product_name));
     assert.ok(message.includes(p.specifications["Référence"] || ""));
