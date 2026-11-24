@@ -9,7 +9,11 @@ import java.time.LocalDateTime;
 import java.util.Map;
 
 @RestController
-public record QuoteController(Quotes quotes) {
+public record QuoteController(Quotes quotes, ma.isolmaroc.service.ContactDelivery contacts) {
+    @PostMapping("/api/contact") public Map<String,Object> contact(@Valid @RequestBody Quote quote) {
+        contacts.send(quote);
+        return Map.of("success",true);
+    }
     @GetMapping("/health") public Map<String,String> health() {
         return Map.of("status","ok","timestamp",LocalDateTime.now().toString());
     }

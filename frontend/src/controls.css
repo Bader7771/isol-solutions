@@ -1,0 +1,36 @@
+.catalog-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.catalog-controls details label {
+  display: block;
+}
+.catalog-controls summary {
+  cursor: pointer;
+}
+.quote-form[hidden] {
+  display: none;
+}
+.product-zoom {
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  cursor: zoom-in;
+}
+.zoom-dialog {
+  max-width: 95vw;
+  margin: auto;
+  padding: 1rem;
+}
+.zoom-dialog img {
+  display: block;
+  max-width: 85vw;
+  max-height: 80vh;
+}
+.zoom-dialog::backdrop {
+  background: #000b;
+}
