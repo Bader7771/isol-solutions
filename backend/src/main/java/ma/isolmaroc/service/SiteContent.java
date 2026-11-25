@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
@@ -23,8 +24,13 @@ public class SiteContent {
     private static final Pattern PDF = Pattern.compile("[a-z0-9-]+\\.pdf");
     private final ObjectNode pages;
     private final Map<String, ClassPathResource> publishedFiles = new HashMap<>();
+    private final Catalog catalog;
 
-    public SiteContent(ObjectMapper mapper) throws IOException {
+    public SiteContent(ObjectMapper mapper) throws IOException { this(mapper, null); }
+
+    @Autowired
+    public SiteContent(ObjectMapper mapper, Catalog catalog) throws IOException {
+        this.catalog = catalog;
         try (var site = new ClassPathResource("content/site.json").getInputStream();
              var register = new ClassPathResource("content/project-register.json").getInputStream()) {
             pages = mapper.readValue(site, ObjectNode.class);
@@ -51,6 +57,20 @@ public class SiteContent {
             }
             publishMedia(source, project, slug, true);
             publishMedia(source, project, slug, false);
+            ArrayNode productUses = project.putArray("productUses");
+            JsonNode uses = source.path("productUses");
+            if (!uses.isMissingNode() && !uses.isArray()) throw new IOException("Invalid product relationships for " + slug);
+            for (JsonNode use : uses) {
+                String productId = use.path("productId").asText("");
+                String explanation = use.path("explanation").asText("").strip();
+                if (productId.isBlank() || explanation.isBlank() || catalog == null) {
+                    throw new IOException("A project product relationship needs a valid product and explanation: " + slug);
+                }
+                ObjectNode relation = productUses.addObject();
+                relation.set("product", catalog.product(productId));
+                relation.put("explanation", explanation);
+                if (use.hasNonNull("technicalDetails")) relation.set("technicalDetails", use.get("technicalDetails"));
+            }
         }
         return result;
     }

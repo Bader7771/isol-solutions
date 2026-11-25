@@ -30,6 +30,11 @@ public class ContentController {
         return ResponseEntity.ok().cacheControl(CACHE).body(content.find(section, slug));
     }
 
+    @GetMapping("/projects/{slug}/products")
+    public ResponseEntity<JsonNode> projectProducts(@PathVariable String slug) {
+        return ResponseEntity.ok().cacheControl(CACHE).body(content.find("projects", slug).path("productUses"));
+    }
+
     @GetMapping("/projects/{slug}/media/{filename}")
     public ResponseEntity<Resource> media(@PathVariable String slug, @PathVariable String filename) {
         Resource resource = content.media(slug, filename);

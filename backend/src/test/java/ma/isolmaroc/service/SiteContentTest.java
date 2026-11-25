@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
+import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -42,5 +43,21 @@ class SiteContentTest {
         assertThrows(IOException.class, () -> content.publishedProjects(mapper,register));
         doc.put("file","../internal.pdf");
         assertThrows(IOException.class, () -> content.publishedProjects(mapper,register));
+    }
+
+    @Test void projectProductUsesResolveAgainstThePreservedCatalog() throws Exception {
+        var catalog = new Catalog(mapper, new File("../data/processed/products_clean.json"));
+        var content = new SiteContent(mapper, catalog);
+        var register = mapper.readTree("""
+            [{"approvedForPublication":true,"hospital":false,"commissioningPartyWrittenApproval":true,
+              "reference":{"slug":"chantier","title":"Chantier","context":"Travaux","sector":"Industrie",
+                "location":"Casablanca","constraints":[],"solutions":[],"duration":null,"photos":[],"documents":[],
+                "productUses":[{"productId":"panneau-mural-absorb-40","explanation":"Traitement des parois du local.",
+                  "technicalDetails":"Épaisseur retenue selon les plans validés."}]}}]
+            """);
+        var use = content.publishedProjects(mapper, register).get(0).path("productUses").get(0);
+        assertEquals("panneau-mural-absorb-40", use.path("product").path("product_id").asText());
+        assertEquals("Traitement des parois du local.", use.path("explanation").asText());
+        assertEquals("Épaisseur retenue selon les plans validés.", use.path("technicalDetails").asText());
     }
 }

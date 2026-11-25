@@ -4,7 +4,7 @@ export default function ProductCard({ p }) {
   return (
     <a
       className="cat-card"
-      href={"/produit.html?id=" + encodeURIComponent(p.product_id)}
+      href={"/produits/" + encodeURIComponent(p.slug || p.product_id)}
     >
       <div className="cat-card-photo">
         <ProductMedia

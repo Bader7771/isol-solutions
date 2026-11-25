@@ -20,7 +20,7 @@ public class Catalog {
     public JsonNode data() { return data; }
     public JsonNode product(String id) {
         for (var product : data.get("products"))
-            if (id.equals(product.path("product_id").asText())) return product;
+            if (id.equals(product.path("product_id").asText()) || id.equals(product.path("slug").asText())) return product;
         throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Produit introuvable.");
     }
     private static String normalized(String value) {
