@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Pause, Play } from 'lucide-react';
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Clipboard, HardHat, Layers, Pause, Play, Settings } from 'lucide-react';
 import { ContactIcon } from '../../layouts/Shell';
 import { whatsappURL } from '../../config';
 import { useEditorialMotion } from '../../motion/useEditorialMotion';
@@ -44,10 +44,10 @@ const strengths = [
   ['Un suivi adapté au chantier', 'L’équipe organise les approvisionnements et précise le suivi technique selon le périmètre du projet.'],
 ];
 const steps = [
-  ['Analyse du besoin', 'Recueillir les plans, le cahier des charges et les usages du bâtiment.'],
-  ['Étude technique', 'Évaluer les contraintes acoustiques et thermiques et proposer un dimensionnement.'],
-  ['Sélection des solutions', 'Choisir les matériaux et établir une proposition détaillée.'],
-  ['Accompagnement du projet', 'Organiser l’approvisionnement, la livraison et le suivi prévu.'],
+  ['Analyse du besoin', 'Recueillir les plans, le cahier des charges et les usages du bâtiment.', Clipboard],
+  ['Étude technique', 'Évaluer les contraintes acoustiques et thermiques et proposer un dimensionnement.', Settings],
+  ['Sélection des solutions', 'Choisir les matériaux et établir une proposition détaillée.', Layers],
+  ['Accompagnement du projet', 'Organiser l’approvisionnement, la livraison et le suivi prévu.', HardHat],
 ];
 
 function HomeImage({ name, sizes, hero = false, priority = false, onLoad }) {
@@ -274,8 +274,13 @@ function Approach() {
         <HomeLink href="/methode">Méthode et qualité</HomeLink>
       </div>
       <ol className="home-process" data-reveal>
-        {steps.map(([title, description], index) => <li key={title} data-step>
-          <span aria-hidden="true">0{index + 1}</span><h3>{title}</h3><p>{description}</p>
+        {steps.map(([title, description, Icon], index) => <li key={title} data-step>
+          {index > 0 && <span className="home-process-rail" aria-hidden="true" />}
+          <span className="home-process-head" aria-hidden="true">
+            <span className="home-process-number">0{index + 1}</span>
+            <span className="home-process-icon"><Icon strokeWidth={1.8} /></span>
+          </span>
+          <h3>{title}</h3><p>{description}</p>
         </li>)}
       </ol>
     </div>

@@ -17,8 +17,13 @@ export function VisitLink({ en = false }) {
   return <a className="action" href="/contact">{en ? 'Request a technical visit' : 'Demander une visite technique'} <ArrowUpRight aria-hidden="true" /></a>;
 }
 
-function Brand() {
-  return <a className="site-brand" href="/" aria-label="Isolmaroc — Accueil">Isolmaroc<span>.</span></a>;
+function Brand({ transparent = false }) {
+  const logo = transparent
+    ? { src: '/assets/images/logo-transparent.png', width: 1743, height: 706 }
+    : { src: '/assets/images/site-logo.png', width: 348, height: 127 };
+  return <a className="site-brand" href="/" aria-label="ISOL SOLUTIONS — Accueil">
+    <img className="brand-logo" src={logo.src} alt="ISOL SOLUTIONS" width={logo.width} height={logo.height} />
+  </a>;
 }
 
 export function Header({ route }) {
@@ -43,7 +48,7 @@ export function Header({ route }) {
 
   return <header className="sitehead" onKeyDown={closeMenu}>
     <div className="head-inner shell">
-      <Brand />
+      <Brand transparent />
       <button ref={toggle} type="button" className="menu-toggle" onClick={() => setMenu(value => !value)}
         aria-expanded={menu} aria-controls="navigation" aria-label={menu ? 'Fermer le menu' : 'Ouvrir le menu'}>
         {menu ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}<span>{menu ? 'Fermer' : 'Menu'}</span>
@@ -89,8 +94,8 @@ export function Footer({ contact, content }) {
   return <footer className="sitefoot site-footer">
     <div className="shell">
       <div className="site-footer-grid">
-        <div className="site-footer-identity"><Brand /><p>ISOL SOLUTIONS · Isolation et aménagement technique au Maroc.</p><ContactButtons contact={contact} /></div>
-        <nav aria-label="Navigation de pied de page"><strong>Isolmaroc</strong>
+        <div className="site-footer-identity"><Brand transparent /><p>ISOL SOLUTIONS · Isolation et aménagement technique au Maroc.</p><ContactButtons contact={contact} /></div>
+        <nav aria-label="Navigation de pied de page"><strong>ISOL SOLUTIONS</strong>
           {[['/a-propos', 'À propos'], ['/realisations', 'Réalisations'], ['/methode', 'Méthode et qualité'], ['/guides', 'Guides techniques'], ['/en', 'Fournisseurs internationaux']].map(([href, label]) => <a key={href} href={href}>{label}</a>)}
         </nav>
         <nav aria-label="Solutions"><strong>Solutions</strong>{content.services.map(service => <a key={service.slug} href={'/expertises/' + service.slug}>{service.title}</a>)}<a href="/catalogue.html">Catalogue de produits</a></nav>

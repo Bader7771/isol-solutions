@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="markTitle markDesc">
+  <title id="markTitle">ISOL SOLUTIONS symbol</title>
+  <desc id="markDesc">A bronze Moroccan arch with layered insulation bands and three acoustic arcs.</desc>
+
+  <defs>
+    <clipPath id="isolMarkClip">
+      <path d="M18 126V64C18 42 42 24 72 8C102 24 126 42 126 64V126Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="160" height="160" rx="28" fill="#FCF8F5"/>
+
+  <g transform="translate(14 14)">
+    <path d="M18 126V64C18 42 42 24 72 8C102 24 126 42 126 64V126Z"
+          fill="none" stroke="#A87A49" stroke-width="7" stroke-linejoin="round"/>
+
+    <g clip-path="url(#isolMarkClip)">
+      <rect x="18" y="42" width="108" height="4" fill="#A87A49" opacity=".5"/>
+      <rect x="18" y="60" width="108" height="4" fill="#A87A49" opacity=".6"/>
+      <rect x="18" y="78" width="108" height="4" fill="#A87A49" opacity=".7"/>
+      <rect x="18" y="96" width="108" height="4" fill="#A87A49" opacity=".8"/>
+
+      <path d="M36 116A36 36 0 0 1 108 116" fill="none" stroke="#211B18" stroke-width="6" stroke-linecap="round"/>
+      <path d="M46 116A26 26 0 0 1 98 116" fill="none" stroke="#211B18" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+      <path d="M56 116A16 16 0 0 1 88 116" fill="none" stroke="#211B18" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    </g>
+  </g>
+</svg>

@@ -15,16 +15,27 @@
   display: none;
 }
 .product-zoom {
-  background: none;
-  border: 0;
+  background: #FFFFFF;
+  border: 1px solid #151515;
+  border-radius: 6px;
+  color: #101820;
   padding: 0;
   width: 100%;
   cursor: zoom-in;
+  transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+.product-zoom:is(:hover, :focus, :focus-visible) {
+  border-color: #003BB5;
+  box-shadow: 0 0 0 3px rgba(0, 59, 181, .16);
 }
 .zoom-dialog {
   max-width: 95vw;
   margin: auto;
   padding: 1rem;
+  border: 1px solid #151515;
+  border-radius: 6px;
+  background: #FFFFFF;
+  color: #101820;
 }
 .zoom-dialog img {
   display: block;

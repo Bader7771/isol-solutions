@@ -1,18 +1,19 @@
 .enquiry-page .page-hero h1 { max-width: 12ch; }
-.contact-panel { background: var(--home-espresso); padding: clamp(1.25rem, 3.3vw, 3.2rem); border-top: 1px solid var(--home-bronze); }
+.contact-panel { background: var(--blue-light); padding: clamp(1.25rem, 3.3vw, 3.2rem); border-top: 2px solid var(--blue-royal); color: var(--ink); }
 .contact-panel h2 { font-size: clamp(2.1rem, 4vw, 4rem); line-height: 1; margin-bottom: 1.25rem; text-wrap: initial; }
-.contact-channel { display: flex; align-items: center; gap: .65rem; min-height: 3rem; padding: .55rem 0; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; }
-.contact-channel:hover { color: var(--accent); }
+.contact-channel { display: flex; align-items: center; gap: .65rem; min-height: 3rem; padding: .55rem 0; border-bottom: 1px solid var(--control-border); color: var(--ink); text-decoration: none; font-size: .9rem; transition: color var(--transition), border-color var(--transition); }
+.contact-channel:hover { color: var(--blue-royal); }
 .contact-channel span { overflow-wrap: anywhere; }
 .contact-channel svg { width: 1.1rem; height: 1.1rem; flex: none; }
 .contact-channel svg:last-child { margin-left: auto; transition: translate var(--quick); }
 .contact-channel:hover svg:last-child { translate: 3px -2px; }
 .contact-panel > p { color: var(--muted); margin: 1rem 0; }
-.contact-panel .contact-icons > a:hover { background: var(--home-ivory); color: var(--home-black); }
+.contact-panel .contact-icons > a:hover { background: var(--blue-royal); color: var(--white); border-color: var(--blue-royal); }
 .contact-panel .contact-tooltip { top: auto; bottom: calc(100% + .5rem); right: 0; transform: none; }
 .contact-panel .contact-icons > a:is(:hover, :focus-visible) .contact-tooltip { transform: none; }
 .enquiry-content { max-width: 65rem; padding-block: var(--space-6) var(--space-7); }
-.enquiry-form fieldset { min-width: 0; border: 0; border-bottom: 1px solid var(--line); padding: 0 0 var(--space-5); margin: 0 0 var(--space-5); }
+.enquiry-form fieldset { min-width: 0; border: 1px solid var(--control-border); border-radius: 6px; padding: 1.15rem 1.25rem var(--space-5); margin: 0 0 var(--space-5); transition: border-color var(--transition), box-shadow var(--transition); }
+.enquiry-form fieldset:focus-within { border-color: var(--control-focus); box-shadow: 0 0 0 3px rgba(0, 59, 181, .12); }
 .enquiry-form legend, .enquiry-receipt h2 { font: 500 clamp(2.45rem, 4.4vw, 4.45rem)/.96 var(--font-heading); letter-spacing: -.04em; margin-bottom: 1.35rem; }
 .enquiry-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 1.6rem; }
 .enquiry-fields label { min-width: 0; font-weight: 600; font-size: .9375rem; }
@@ -20,12 +21,13 @@
 .enquiry-wide { grid-column: 1/-1; }
 .enquiry-fields .field-control { display: block; margin-top: .4rem; font-weight: 400; }
 .enquiry-fields textarea { resize: vertical; }
-.enquiry-fields input[type="file"]::file-selector-button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; padding: .3rem .5rem; margin-inline-end: .5rem; cursor: pointer; }
+.enquiry-fields input[type="file"]::file-selector-button { border: 1px solid var(--control-border); border-radius: 6px; background: var(--white); color: #101820; font: inherit; padding: .45rem .65rem; margin-inline-end: .65rem; cursor: pointer; transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), color var(--transition); }
+.enquiry-fields input[type="file"]:is(:hover, :focus, :focus-visible)::file-selector-button { background: var(--blue-light); border-color: var(--control-focus); color: var(--control-focus); box-shadow: 0 0 0 3px rgba(0, 59, 181, .14); }
 .enquiry-consent { display: flex; align-items: start; gap: .7rem; line-height: 1.5; }
-.enquiry-consent input { flex: none; margin: .26rem 0 0; width: 1.05rem; height: 1.05rem; }
+.enquiry-consent input { flex: none; margin: .26rem 0 0; width: 1.05rem; height: 1.05rem; border: 1px solid var(--control-border); border-radius: 3px; background: var(--white); accent-color: var(--control-focus); cursor: pointer; transition: border-color var(--transition), box-shadow var(--transition); }
 .enquiry-form .action, .enquiry-receipt .action { margin-top: 1.25rem; }
 .enquiry-error { color: #8c322d; margin-top: .8rem; }
-.enquiry-receipt { border-block: 1px solid var(--line); padding-block: var(--space-5); }
+.enquiry-receipt { border-block: 1px solid var(--control-border); padding-block: var(--space-5); }
 .enquiry-receipt strong { overflow-wrap: anywhere; }
 @media (max-width: 680px) {
   .enquiry-fields { grid-template-columns: minmax(0, 1fr); }

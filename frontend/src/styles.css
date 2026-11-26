@@ -981,16 +981,48 @@ section {
 }
 
 .timeline-track__line {
+    position: relative;
     height: 100%;
     width: 0%;
-    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    overflow: hidden;
+    background: linear-gradient(90deg, #003BB5, #49B8ED);
     border-radius: 2px;
     transition: width 1.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 12px rgba(0, 71, 171, 0.5);
+    box-shadow: 0 0 6px rgba(0, 59, 181, 0.48), 0 0 16px rgba(73, 184, 237, 0.32);
+}
+
+.timeline-track__line::before {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: 0;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
+    filter: drop-shadow(0 0 6px rgba(73, 184, 237, 0.8));
+    animation: timeline-led-travel 6s linear infinite;
+}
+
+.timeline-track__line::after {
+    content: "";
+    position: absolute;
+    inset: -1px 0;
+    background:
+        radial-gradient(circle at 0 50%, #49B8ED 0 2px, transparent 2.5px),
+        radial-gradient(circle at 100% 50%, #003BB5 0 2px, transparent 2.5px);
+    filter: drop-shadow(0 0 4px rgba(73, 184, 237, 0.8));
 }
 
 .timeline-track__line.is-visible {
     width: 100%;
+}
+
+@keyframes timeline-led-travel {
+    from { transform: translateX(-120%); }
+    to { transform: translateX(400%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-track__line::before { animation: none; }
 }
 
 /* --- Étape individuelle --- */
@@ -3599,4 +3631,117 @@ section {
     .product-hero {
         padding-top: 100px;
     }
+}
+
+/* ================================================
+   Global border/visibility normalization (legacy views)
+   ================================================ */
+:root {
+    --control-border: #151515;
+    --control-focus: #003BB5;
+    --control-placeholder: #667085;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="image"]),
+textarea,
+select,
+.form-group input,
+.form-group textarea,
+.quote-form__group input,
+.quote-form__group textarea,
+.search-form input,
+.search-form--wide input,
+.newsletter-form input {
+    border: 1px solid #151515 !important;
+    border-radius: 6px !important;
+    background: #FFFFFF !important;
+    color: #101820 !important;
+    transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="image"]):is(:hover, :focus, :focus-visible),
+textarea:is(:hover, :focus, :focus-visible),
+select:is(:hover, :focus, :focus-visible),
+.form-group input:is(:hover, :focus, :focus-visible),
+.form-group textarea:is(:hover, :focus, :focus-visible),
+.quote-form__group input:is(:hover, :focus, :focus-visible),
+.quote-form__group textarea:is(:hover, :focus, :focus-visible),
+.search-form input:is(:hover, :focus, :focus-visible),
+.search-form--wide input:is(:hover, :focus, :focus-visible),
+.newsletter-form input:is(:hover, :focus, :focus-visible) {
+    border-color: #003BB5 !important;
+    box-shadow: 0 0 0 3px rgba(0, 59, 181, .16) !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-group input::placeholder,
+.form-group textarea::placeholder,
+.quote-form__group input::placeholder,
+.quote-form__group textarea::placeholder,
+.search-form input::placeholder,
+.search-form--wide input::placeholder,
+.newsletter-form input::placeholder {
+    color: #667085 !important;
+    opacity: 1 !important;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+.checkbox-label input[type="checkbox"] {
+    border: 1px solid #151515 !important;
+    border-radius: 3px;
+    background: #FFFFFF !important;
+    accent-color: #003BB5 !important;
+    cursor: pointer;
+    transition: border-color 200ms ease, box-shadow 200ms ease !important;
+}
+input[type="radio"] { border-radius: 50% !important; }
+input[type="checkbox"]:is(:hover, :focus, :focus-visible),
+input[type="radio"]:is(:hover, :focus, :focus-visible) {
+    border-color: #003BB5 !important;
+    box-shadow: 0 0 0 3px rgba(0, 59, 181, .16) !important;
+}
+
+input[type="file"]::file-selector-button {
+    border: 1px solid #151515 !important;
+    border-radius: 6px !important;
+    background: #FFFFFF !important;
+    color: #101820 !important;
+    padding: .45rem .65rem;
+    margin-inline-end: .65rem;
+    cursor: pointer;
+    transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease !important;
+}
+input[type="file"]:is(:hover, :focus, :focus-visible)::file-selector-button {
+    border-color: #003BB5 !important;
+    background: #E8F4FF !important;
+    color: #003BB5 !important;
+}
+
+.contact__form,
+fieldset,
+.quote-modal__dialog,
+.search-form--wide,
+.widget-newsletter,
+.newsletter-widget {
+    border: 1px solid #151515 !important;
+    border-radius: 6px !important;
+    background: #FFFFFF !important;
+    color: #101820 !important;
+}
+.quote-modal__close,
+.shell[role=alert] button {
+    border: 1px solid #151515 !important;
+    border-radius: 6px !important;
+    background: #FFFFFF !important;
+    color: #101820 !important;
+    transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease !important;
+}
+.quote-modal__close:is(:hover, :focus, :focus-visible),
+.shell[role=alert] button:is(:hover, :focus, :focus-visible) {
+    border-color: #003BB5 !important;
+    background: #E8F4FF !important;
+    color: #003BB5 !important;
+    box-shadow: 0 0 0 3px rgba(0, 59, 181, .16) !important;
 }

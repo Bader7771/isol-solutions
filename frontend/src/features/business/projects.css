@@ -1,13 +1,13 @@
-.directory-list { max-width: 65rem; margin-inline: auto; border-top: 1px solid var(--line); }
-.directory-list > a { display: flex; justify-content: space-between; align-items: center; gap: 1.1rem 2rem; padding-block: 1.55rem; border-bottom: 1px solid var(--line); text-decoration: none; }
+.directory-list { max-width: 65rem; margin-inline: auto; border-top: 1px solid var(--control-border); }
+.directory-list > a { display: flex; justify-content: space-between; align-items: center; gap: 1.1rem 2rem; padding-block: 1.55rem; border-bottom: 1px solid var(--control-border); text-decoration: none; }
 .directory-list h2 { font-size: clamp(2rem, 4vw, 4rem); transition: color var(--quick); text-wrap: initial; }
 .directory-list p { margin-top: .55rem; color: var(--muted); max-width: 57ch; }
 .directory-list .icon-button { flex: none; transition: background var(--quick), translate var(--quick); }
 .directory-list > a:hover { color: var(--accent); }
-.directory-list > a:hover .icon-button { background: #ddc4a6; translate: 3px -2px; }
+.directory-list > a:hover .icon-button { background: var(--blue-royal); color: var(--white); border-color: var(--blue-royal); translate: 3px -2px; }
 .editorial-article { display: grid; grid-template-columns: minmax(10rem, .62fr) minmax(0, 2.38fr); align-items: start; gap: clamp(2rem, 7vw, 8rem); padding-block: var(--space-6); }
-.editorial-index { position: sticky; top: 7rem; border-top: 1px solid var(--home-bronze); }
-.editorial-index strong, .editorial-index a { display: block; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.editorial-index { position: sticky; top: 7rem; border-top: 2px solid var(--blue-royal); }
+.editorial-index strong, .editorial-index a { display: block; padding: .8rem 0; border-bottom: 1px solid var(--control-border); }
 .editorial-index a { font-size: .9rem; line-height: 1.5; text-decoration: none; }
 .editorial-index a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: .23rem; }
 .editorial-index .inline-action { display: flex; }
@@ -25,7 +25,7 @@
 .privacy-reading a { overflow-wrap: anywhere; }
 
 .project-list { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: start; gap: clamp(1.3rem, 4.5vw, 5.4rem); }
-.project-card { display: block; grid-column: span 5; padding-bottom: 1.15rem; border-bottom: 1px solid var(--line); text-decoration: none; }
+.project-card { display: block; grid-column: span 5; padding-bottom: 1.15rem; border-bottom: 1px solid var(--control-border); text-decoration: none; }
 .project-card:nth-child(4n+1), .project-card:nth-child(4n+4) { grid-column: span 7; }
 .project-card:nth-child(even) { margin-top: clamp(0rem, 4vw, 5rem); }
 .project-card figure { aspect-ratio: 1.48; }
@@ -40,10 +40,10 @@
 .project-meta { color: var(--accent); font-size: .85rem; font-weight: 600; }
 .project-story { padding-block: var(--space-5) var(--space-7); }
 .project-story > .project-meta { margin-bottom: 1.1rem; }
-.project-section, .project-actions { padding-block: var(--space-5); border-bottom: 1px solid var(--line); }
+.project-section, .project-actions { padding-block: var(--space-5); border-bottom: 1px solid var(--control-border); }
 .project-section h2 { margin-bottom: 1.15rem; }
 .project-cover { margin-bottom: var(--space-4); }
-.project-cover button, .project-photo-grid button { display: block; position: relative; width: 100%; overflow: hidden; padding: 0; border: 0; background: var(--panel); cursor: zoom-in; }
+.project-cover button, .project-photo-grid button { display: block; position: relative; width: 100%; overflow: hidden; padding: 0; border: 1px solid var(--control-border); background: var(--panel); cursor: zoom-in; transition: border-color var(--quick), box-shadow var(--quick); }
 .project-cover button { aspect-ratio: 2 / 1; }
 .project-photo-grid button { aspect-ratio: 4 / 3; }
 .project-cover img, .project-photo-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform var(--image-timing); }
@@ -68,9 +68,10 @@
   .project-use-grid > :only-child > div + div { padding: clamp(1rem, 4vw, 3.25rem); }
 }
 .project-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-.project-lightbox { position: fixed; margin: auto; width: min(75rem, calc(100% - 1rem)); max-width: none; max-height: 96dvh; padding: clamp(.5rem, 2vw, 1.5rem); background: var(--home-black); color: var(--home-ivory); border: 1px solid var(--line); }
+.project-lightbox { position: fixed; margin: auto; width: min(75rem, calc(100% - 1rem)); max-width: none; max-height: 96dvh; padding: clamp(.5rem, 2vw, 1.5rem); background: var(--white); color: var(--ink); border: 1px solid var(--control-border); box-shadow: 0 24px 60px rgba(16, 24, 32, .2); --muted: #475569; }
 .project-lightbox[open] { animation: dialog-enter var(--quick) both; }
-.project-lightbox::backdrop { background: #111111e8; }
+.project-lightbox::backdrop { background: rgba(232, 244, 255, .92); }
+.project-lightbox-controls .icon-button { color: var(--blue-royal); }
 .project-lightbox-controls { display: flex; align-items: center; justify-content: space-between; padding-bottom: .55rem; }
 .project-lightbox-stage { position: relative; }
 .project-lightbox-stage figure { text-align: center; }
