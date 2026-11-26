@@ -1,7 +1,9 @@
 const aliases={'/index.html':'/','/apropos.html':'/a-propos','/services.html':'/expertises','/contact.html':'/contact','/diagnostic.html':'/contact','/blog.html':'/guides','/article-isolation-phonique.html':'/guides','/categorie.html':'/catalogue.html'};
+export const normalizePath = path => path.replace(/\/+$/, '') || '/';
 export function resolve(path,content,data,p,params){
- const clean=path.replace(/\/$/,'')||'/';
+ const clean=normalizePath(path);
  const target=aliases[clean]||clean;
+ if(target==='/produit.html'&&!p)return {view:'missing',title:'Produit introuvable',summary:'Cette fiche produit est indisponible.',path:target};
  if(target.startsWith('/produits/')&&p)return {view:'detail',title:p.product_name,summary:p.short_description,path:target};
  const routes={
  '/':['home','Isolation & aménagement des environnements exigeants.','Exécution de salles médicales, acoustique, isolation et aménagement clé en main au Maroc.'],

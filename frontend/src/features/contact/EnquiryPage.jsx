@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { ContactButtons, ContactIcon } from "../../layouts/Shell";
+import { PageHero } from "../../components/Editorial";
+import { useEditorialMotion } from "../../motion/useEditorialMotion";
 import { projectTypes, requestVisit } from "./enquiry-api";
 import "./enquiry.css";
 
@@ -39,6 +43,7 @@ export default function EnquiryPage({
   initialProjectType = "",
   initialDescription = "",
 }) {
+  const root = useEditorialMotion();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [receipt, setReceipt] = useState("");
@@ -74,31 +79,24 @@ export default function EnquiryPage({
   }
 
   return (
-    <main className="enquiry-page" id="main-content">
-      <header className="enquiry-intro">
-        <div>
-          <p className="enquiry-kicker">Contact & devis</p>
-          <h1>Demander une visite technique</h1>
-          <p>
-            Décrivez votre chantier, sa localisation et son calendrier. Notre
-            équipe étudiera les documents transmis pour préparer un échange
-            technique adapté.
-          </p>
-        </div>
-        <aside aria-label="Contacter directement l’équipe">
-          <h2>Échanger avec l’équipe</h2>
-          {phone && (
-            <a
-              href={`https://wa.me/${phone}?text=${encodeURIComponent("Bonjour ISOL SOLUTIONS, je souhaite organiser une visite technique pour mon projet.")}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              WhatsApp · +{phone}
-            </a>
-          )}
-          {email && <a href={"mailto:" + email}>{email}</a>}
+    <main className="enquiry-page" id="main-content" ref={root}>
+      <PageHero label="Contact & devis" title="Demander une visite technique"
+        items={[{ label: "Contact" }]}
+        summary="Décrivez votre chantier, sa localisation et son calendrier. Notre équipe étudiera les documents transmis pour préparer un échange technique adapté.">
+        <aside className="contact-panel" aria-label="Contacter directement l’équipe" data-reveal>
+          <h2 data-step>Échanger avec l’équipe</h2>
+          {phone && <a className="contact-channel" data-step
+            href={`https://wa.me/${phone}?text=${encodeURIComponent("Bonjour ISOL SOLUTIONS, je souhaite organiser une visite technique pour mon projet.")}`}
+            target="_blank" rel="noreferrer">
+            <ContactIcon name="WhatsApp" /> <span>WhatsApp · +{phone}</span> <ArrowUpRight aria-hidden="true" />
+          </a>}
+          {email && <a className="contact-channel" data-step href={"mailto:" + email}><Mail aria-hidden="true" /> <span>{email}</span> <ArrowUpRight aria-hidden="true" /></a>}
+          {contact.address && <p data-step>{contact.address}</p>}
+          <ContactButtons contact={contact} />
         </aside>
-      </header>
+      </PageHero>
+      <div className="surface-light">
+        <div className="shell enquiry-content">
       {receipt ? (
         <section className="enquiry-receipt" role="status">
           <h2>Votre demande est enregistrée.</h2>
@@ -109,7 +107,7 @@ export default function EnquiryPage({
           <p>
             <strong>{receipt}</strong>
           </p>
-          <button type="button" onClick={() => setReceipt("")}>
+          <button className="action" type="button" onClick={() => setReceipt("")}>
             Présenter un autre projet
           </button>
         </section>
@@ -121,7 +119,7 @@ export default function EnquiryPage({
               {contactFields.map(({ name, label, ...attributes }) => (
                 <label key={name}>
                   {label}
-                  <input name={name} type="text" {...attributes} required />
+                  <input className="field-control" name={name} type="text" {...attributes} required />
                 </label>
               ))}
             </div>
@@ -132,6 +130,7 @@ export default function EnquiryPage({
               <label>
                 Type de projet
                 <select
+                  className="field-control"
                   name="projectType"
                   defaultValue={project?.[0] || ""}
                   required
@@ -149,6 +148,7 @@ export default function EnquiryPage({
               <label>
                 Ville du chantier
                 <input
+                  className="field-control"
                   name="city"
                   autoComplete="address-level2"
                   maxLength={150}
@@ -158,6 +158,7 @@ export default function EnquiryPage({
               <label>
                 Surface estimée en m² <small>(facultatif)</small>
                 <input
+                  className="field-control"
                   name="surface"
                   type="number"
                   min="0.01"
@@ -168,11 +169,12 @@ export default function EnquiryPage({
               </label>
               <label>
                 Échéance souhaitée <small>(facultatif)</small>
-                <input name="deadline" type="date" min={localDate} />
+                <input className="field-control" name="deadline" type="date" min={localDate} />
               </label>
               <label className="enquiry-wide">
                 Description du projet
                 <textarea
+                  className="field-control"
                   name="description"
                   defaultValue={initialDescription}
                   rows={5}
@@ -185,7 +187,7 @@ export default function EnquiryPage({
               <label className="enquiry-wide">
                 Joindre un plan ou un document{" "}
                 <small>(facultatif, PDF de 5 Mo maximum)</small>
-                <input type="file" name="plan" accept=".pdf,application/pdf" />
+                <input className="field-control" type="file" name="plan" accept=".pdf,application/pdf" />
               </label>
             </div>
           </fieldset>
@@ -199,11 +201,13 @@ export default function EnquiryPage({
               {error}
             </p>
           )}
-          <button type="submit" disabled={busy}>
+          <button className="action" type="submit" disabled={busy}>
             {busy ? "Envoi en cours…" : "Envoyer ma demande"}
           </button>
         </form>
       )}
+        </div>
+      </div>
     </main>
   );
 }

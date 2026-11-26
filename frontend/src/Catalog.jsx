@@ -1,14 +1,17 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import {Search, SlidersHorizontal, X, ChevronDown} from "lucide-react";
 import {
   FACETS,
   facetOptions,
   filterProducts,
   sortProducts,
 } from "./catalog-data";
+import { Notice } from "./components/Editorial";
 import CatalogHero from "./pages/CatalogHero";
 import CatalogCTA from "./pages/CatalogCTA";
+import QuickView from "./features/products/QuickView";
+import { useEditorialMotion } from "./motion/useEditorialMotion";
 import ProductCard from "./features/products/ProductCard";
-import "./features/products/catalog.css";
 
 function readFilters(params) {
   return Object.fromEntries([
@@ -31,7 +34,17 @@ export default function Catalog({
   );
   const [filters, setFilters] = useState(() => readFilters(params));
   const [sort, setSort] = useState(() => params.get("sort") || "default");
-  const [expanded, setExpanded] = useState(false);
+  const drawer = useRef(null);
+  const quickDialog = useRef(null);
+  const [preview, setPreview] = useState(null);
+  const page = useEditorialMotion();
+  useEffect(() => { if (preview && !quickDialog.current.open) quickDialog.current.showModal(); }, [preview]);
+  useEffect(() => {
+    const desktop = matchMedia("(min-width: 901px)");
+    const closeOnDesktop = () => { if (desktop.matches) drawer.current?.close(); };
+    desktop.addEventListener("change", closeOnDesktop);
+    return () => desktop.removeEventListener("change", closeOnDesktop);
+  }, []);
   const products = useMemo(
     () => sortProducts(filterProducts(source, filters), sort),
     [source, filters, sort],
@@ -59,68 +72,46 @@ export default function Catalog({
       for (const v of filters[f.key]) url.searchParams.append(f.key, v);
     history.replaceState(null, "", url);
   }, [filters, sort]);
+  const filterPanel = (
+    <aside className="cat-filters" aria-label="Filtres du catalogue">
+      <div className="cat-filter-title">
+        <h2>Filtres</h2>
+        <button type="button" onClick={reset} disabled={!active && !filters.q && sort === "default"}>Réinitialiser</button>
+      </div>
+      {FACETS.filter(f => !cat || f.key !== "category").map(f => {
+        const options = facetOptions(source, f);
+        if (!options.length) return null;
+        const isPrimary = ["brand", "category"].includes(f.key);
+        return (
+          <details key={f.key} open={isPrimary || filters[f.key].length > 0} className="cat-facet">
+            <summary>{f.label}{filters[f.key].length > 0 && " (" + filters[f.key].length + ")"}<ChevronDown aria-hidden="true" /></summary>
+            <div className="cat-facet-options">
+              {options.map(v => (
+                <label key={v}>
+                  <input type="checkbox" checked={filters[f.key].includes(v)} onChange={() => toggle(f.key, v)} />
+                  <span>{data.categories[v]?.title || v}</span>
+                </label>
+              ))}
+            </div>
+          </details>
+        );
+      })}
+    </aside>
+  );
   return (
-    <main className="cat-market">
-      <div className="cat-shell">
-        <CatalogHero cat={cat} products={source} />
+    <main id="main-content" className="cat-market" ref={page}>
+      <CatalogHero cat={cat} />
+      <div className="cat-shell showroom-results">
         <div className="cat-layout">
-          <aside
-            className={"cat-filters" + (expanded ? " is-expanded" : "")}
-            aria-label="Filtres du catalogue"
-          >
-            <div className="cat-filter-title">
-              <h2>Filtres</h2>
-              <button
-                type="button"
-                onClick={reset}
-                disabled={!active && !filters.q && sort === "default"}
-              >
-                Réinitialiser
-              </button>
-            </div>
-            <button
-              className="cat-toggle"
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="catalog-facets"
-              onClick={() => setExpanded(!expanded)}
-            >
-              {expanded ? "Masquer les filtres" : "Afficher les filtres"}{" "}
-              {active ? "(" + active + ")" : ""}
-              <span aria-hidden="true">{expanded ? "−" : "+"}</span>
+          {filterPanel}
+          <dialog ref={drawer} className="cat-filter-drawer" aria-label="Filtres du catalogue"
+            onClick={event => { if (event.target === event.currentTarget) drawer.current.close(); }}>
+            <button className="cat-close icon-button" type="button" aria-label="Fermer les filtres" onClick={() => drawer.current.close()}><X aria-hidden="true" /></button>
+            {filterPanel}
+            <button className="action" type="button" onClick={() => drawer.current.close()}>
+              Afficher {products.length} résultat{products.length === 1 ? "" : "s"}
             </button>
-            <div id="catalog-facets" className="cat-facets">
-              {FACETS.filter((f) => !cat || f.key !== "category").map((f) => {
-                const options = facetOptions(source, f);
-                if (!options.length) return null;
-                return (
-                  <details
-                    key={f.key}
-                    open={
-                      f.key === "category" ||
-                      f.key === "brand" ||
-                      filters[f.key].length > 0
-                    }
-                    className="cat-facet"
-                  >
-                    <summary>{f.label}</summary>
-                    <div className="cat-facet-options">
-                      {options.map((v) => (
-                        <label key={v}>
-                          <input
-                            type="checkbox"
-                            checked={filters[f.key].includes(v)}
-                            onChange={() => toggle(f.key, v)}
-                          />
-                          <span>{data.categories[v]?.title || v}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </details>
-                );
-              })}
-            </div>
-          </aside>
+          </dialog>
           <div className="cat-results">
             <div className="cat-toolbar">
               <p aria-live="polite">
@@ -128,8 +119,9 @@ export default function Catalog({
                 {products.length === 1 ? "" : "s"}
               </p>
               <label className="cat-search">
-                <span aria-hidden="true">⌕</span>
+                <Search aria-hidden="true"/>
                 <input
+                  className="field-control"
                   type="search"
                   aria-label="Rechercher des produits"
                   placeholder="Rechercher un produit"
@@ -140,33 +132,36 @@ export default function Catalog({
                 />
               </label>
               <label className="cat-sort">
-                Trier par{" "}
-                <select value={sort} onChange={(e) => setSort(e.target.value)}>
+                <select className="field-control" aria-label="Trier les produits" value={sort} onChange={(e) => setSort(e.target.value)}>
                   <option value="default">Sélection</option>
                   <option value="az">Nom A–Z</option>
                   <option value="za">Nom Z–A</option>
                   <option value="documents">Documents</option>
                 </select>
+                <ChevronDown aria-hidden="true" />
               </label>
+              <button className="cat-toggle action action--outline" type="button" aria-haspopup="dialog" onClick={() => drawer.current.showModal()}>
+                <SlidersHorizontal aria-hidden="true" /> Filtres{active ? " (" + active + ")" : ""}
+              </button>
             </div>
             {products.length ? (
-              <div className="cat-grid">
-                {products.map((p) => (
-                  <ProductCard key={p.product_id} p={p} />
+              <div className="cat-grid" aria-label="Résultats du catalogue">
+                {products.map((p, index) => (
+                  <ProductCard key={p.product_id} p={p} index={index} onPreview={setPreview} />
                 ))}
               </div>
             ) : (
-              <div className="cat-empty">
-                <h2>Aucun produit correspondant.</h2>
-                <button type="button" className="cat-action" onClick={reset}>
+              <Notice title="Aucun produit correspondant.">
+                <button type="button" className="action" onClick={reset}>
                   Réinitialiser les filtres
                 </button>
-              </div>
+              </Notice>
             )}
           </div>
         </div>
         <CatalogCTA />
       </div>
+      <QuickView dialog={quickDialog} product={preview} onClose={() => setPreview(null)} />
     </main>
   );
 }

@@ -1,11 +1,14 @@
 async function request(path, options) {
   const response = await fetch(path, options);
-  if (!response.ok)
-    throw new Error(
+  if (!response.ok) {
+    const error = new Error(
       response.status === 404
         ? "Produit introuvable."
         : "Service momentanément inaccessible.",
     );
+    error.status = response.status;
+    throw error;
+  }
   return response.json();
 }
 export const fetchCatalog = () => request("/api/catalog");

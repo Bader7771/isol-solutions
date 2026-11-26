@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import {ArrowUpRight,X} from "lucide-react";
 import { submitQuote } from "../../api.js";
 export default function QuoteDialog({ product }) {
   const dialog = useRef(null);
@@ -37,14 +38,14 @@ export default function QuoteDialog({ product }) {
       <button
         id="btn-devis"
         type="button"
-        className="cat-action"
+        className="action"
         onClick={() => {
           setStatus("idle");
           setError("");
           dialog.current.showModal();
         }}
       >
-        Demander un devis <span aria-hidden="true">↗</span>
+        Demander un devis <ArrowUpRight aria-hidden="true"/>
       </button>
       <dialog
         className="cat-dialog"
@@ -55,13 +56,13 @@ export default function QuoteDialog({ product }) {
         }}
       >
         <button
-          className="cat-close"
+          className="cat-close icon-button"
           disabled={status === "sending"}
           type="button"
           onClick={() => dialog.current.close()}
           aria-label="Fermer"
         >
-          ×
+          <X aria-hidden="true"/>
         </button>
         {status === "sent" ? (
           <div id="quote-success" role="status">
@@ -72,7 +73,7 @@ export default function QuoteDialog({ product }) {
             </p>
             <button
               type="button"
-              className="cat-action"
+              className="action"
               onClick={() => dialog.current.close()}
             >
               Fermer
@@ -89,6 +90,7 @@ export default function QuoteDialog({ product }) {
                     {label}
                     {required ? " *" : ""}
                     <input
+                      className="field-control"
                       name={key}
                       id={"devis-" + key}
                       type={type}
@@ -102,6 +104,7 @@ export default function QuoteDialog({ product }) {
               <label className="cat-form-full">
                 Votre demande *
                 <textarea
+                  className="field-control"
                   name="message"
                   id="devis-message"
                   rows="4"
@@ -116,7 +119,7 @@ export default function QuoteDialog({ product }) {
                 </p>
               )}
               <button
-                className="cat-action cat-form-full"
+                className="action cat-form-full"
                 id="devis-submit-btn"
                 disabled={status === "sending"}
               >

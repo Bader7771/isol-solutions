@@ -1,39 +1,99 @@
-import React,{lazy,Suspense,useEffect,useState} from 'react';
-import {createRoot} from 'react-dom/client';
-import {fetchCatalog,fetchProduct,fetchCompany,fetchContent} from './api';
-import {Header,Footer,Dock} from './layouts/Shell';
-import {resolve,metadata} from './app/routes';
-import './styles/site.css';
-const Home=lazy(()=>import('./features/business/Home'));
-const Business=key=>lazy(()=>import('./features/business/Pages').then(m=>({default:m[key]})));
-const Listing=Business('Listing'),Editorial=Business('Editorial'),Project=Business('Project'),Privacy=Business('Privacy');
-const Catalog=lazy(()=>import('./Catalog'));
-const Detail=lazy(()=>import('./pages/Detail'));
-const Enquiry=lazy(()=>import('./features/contact/EnquiryPage'));
-const params=new URLSearchParams(location.search);
-function Site({content,company,data,p}){
- const r=resolve(location.pathname,content,data,p,params);
- useEffect(()=>{metadata(r,company.contact)},[]);
- const contact=company.contact;
- let body;
- switch(r.view){
- case 'home':body=<Home content={content} contact={contact} data={data}/>;break;
- case 'list':body=<Listing {...r}/>;break;
- case 'editorial':body=<Editorial {...r}/>;break;
- case 'project':body=<Project project={r.page} contact={contact}/>;break;
- case 'catalog':body=<Catalog data={data} params={params}/>;break;
- case 'detail':body=<Detail p={p} contact={contact} related={data.products.filter(v=>v.category_id===p.category_id&&v.product_id!==p.product_id).slice(0,3)}/>;break;
- case 'contact':body=<Enquiry contact={contact} initialDescription={params.get('service')||''}/>;break;
- case 'privacy':body=<Privacy contact={contact}/>;break;
- default:body=<main className="shell block"><h1>Page introuvable</h1><a href="/">Retour à l’accueil</a></main>
- }
- return <><a className="skip" href="#route-content">Aller au contenu</a><Header content={content}/><div id="route-content" tabIndex="-1"><Suspense fallback={<p className="shell block" role="status">Chargement…</p>}>{body}</Suspense></div><Footer contact={contact} content={content}/><Dock contact={contact} product={p} projectName={r.view==='project'?r.page.title:''}/></>
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { LoaderCircle } from 'lucide-react';
+import { createRoot } from 'react-dom/client';
+import { fetchCatalog, fetchCompany, fetchContent, fetchProduct } from './api';
+import { SiteLayout } from './layouts/Shell';
+import { metadata, resolve, normalizePath } from './app/routes';
+import { PageHero } from './components/Editorial';
+import './styles/design.css';
+import './styles/shell.css';
+import './features/products/catalog.css';
+import './features/business/home.css';
+import '@fontsource/cormorant-garamond/400.css';
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/cormorant-garamond/latin-500-italic.css';
+import '@fontsource/manrope/400.css';
+import '@fontsource/manrope/500.css';
+import '@fontsource/manrope/600.css';
+
+const Home = lazy(() => import('./features/business/Home'));
+const businessPage = name => lazy(() => import('./features/business/Pages').then(module => ({ default: module[name] })));
+const Listing = businessPage('Listing');
+const Editorial = businessPage('Editorial');
+const Project = businessPage('Project');
+const Privacy = businessPage('Privacy');
+const Catalog = lazy(() => import('./Catalog'));
+const Detail = lazy(() => import('./pages/Detail'));
+const Enquiry = lazy(() => import('./features/contact/EnquiryPage'));
+
+const path = normalizePath(location.pathname);
+const params = new URLSearchParams(location.search);
+
+function Loading() {
+  return <p className="shell loading-state" role="status"><LoaderCircle aria-hidden="true" />Chargement…</p>;
 }
-function App(){const [values,setValues]=useState(null),[error,setError]=useState('');
- useEffect(()=>{const cleanProduct=location.pathname.startsWith('/produits/'),product=location.pathname==='/produit.html'||cleanProduct,catalog=product||['/categorie.html','/catalogue.html'].includes(location.pathname)||location.pathname==='/';
- const id=cleanProduct?decodeURIComponent(location.pathname.slice('/produits/'.length)):params.get('id')||'missing';
- Promise.all([fetchContent(),fetchCompany(),catalog?fetchCatalog():null,product?fetchProduct(id):null]).then(setValues).catch(e=>setError(e.message));},[]);
- if(error)return <main className="shell block" role="alert"><h1>{error}</h1><button onClick={()=>location.reload()}>Réessayer</button> · <a href="/">Accueil</a></main>;
- return values?<Site content={values[0]} company={values[1]} data={values[2]} p={values[3]}/>:<p className="shell block" role="status">Chargement…</p>;
+
+function Site({ content, company, data, product }) {
+  const route = resolve(path, content, data, product, params);
+  const contact = company.contact;
+  useEffect(() => {
+    metadata(route, contact);
+  }, []);
+
+  let body;
+  switch (route.view) {
+    case 'home': body = <Home content={content} contact={contact} />; break;
+    case 'list': body = <Listing {...route} />; break;
+    case 'editorial': body = <Editorial {...route} />; break;
+    case 'project': body = <Project project={route.page} projects={content.projects} contact={contact} />; break;
+    case 'catalog': body = <Catalog data={data} params={params} />; break;
+    case 'detail':
+      body = <Detail p={product} contact={contact} related={data.products
+        .filter(item => item.category_id === product.category_id && item.product_id !== product.product_id).slice(0, 3)} />;
+      break;
+    case 'contact': body = <Enquiry contact={contact} initialDescription={params.get('service') || ''} />; break;
+    case 'privacy': body = <Privacy contact={contact} />; break;
+    default:
+      body = <main id="main-content"><PageHero label="Page indisponible" title={route.title} summary={route.summary} />
+        <div className="shell block"><a className="action" href="/">Retour à l’accueil</a></div>
+      </main>;
+  }
+
+  return <SiteLayout route={route} contact={contact} content={content} product={product}>
+    <Suspense fallback={<Loading />}>{body}</Suspense>
+  </SiteLayout>;
 }
-createRoot(document.getElementById('root')).render(<App/>);
+
+function App() {
+  const [values, setValues] = useState(null);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const cleanProduct = path.startsWith('/produits/');
+    const product = cleanProduct || path === '/produit.html';
+    const catalog = product || path === '/catalogue.html' || path === '/categorie.html';
+    const id = cleanProduct ? path.slice('/produits/'.length) : params.get('id');
+    const work = product && id ? fetchProduct(decodeProductId(id)).catch(failure => {
+      if (failure.status === 404) return null;
+      throw failure;
+    }) : null;
+    Promise.all([fetchContent(), fetchCompany(), catalog ? fetchCatalog() : null, work])
+      .then(([content, company, data, productRecord]) => setValues({ content, company, data, product: productRecord }))
+      .catch(failure => setError(failure.message));
+  }, []);
+
+  if (values) return <Site {...values} />;
+  return <SiteLayout route={{ view: 'loading', path }}>
+    {error ? <main className="shell block" role="alert">
+      <h1>{error}</h1><p className="page-summary">Vous pouvez réessayer de charger la page.</p>
+      <div className="block"><button className="action" onClick={() => location.reload()}>Réessayer</button></div>
+    </main> : <Loading />}
+  </SiteLayout>;
+}
+
+function decodeProductId(id) {
+  if (!path.startsWith('/produits/')) return id;
+  try { return decodeURIComponent(id); } catch { return id; }
+}
+
+createRoot(document.getElementById('root')).render(<App />);
